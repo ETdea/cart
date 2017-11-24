@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AppComponent } from './app.component';
+import { GoodsComponent } from './goods/goods.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GoodsComponent
   ],
   imports: [
     BrowserModule,
