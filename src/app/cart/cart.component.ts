@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import { CartService } from '../cart.service';
 import { getPluralCase } from '@angular/common/src/i18n/localization';
 import { strictEqual } from 'assert';
+import { concat } from 'rxjs/operators/concat';
 
 @Component({
   selector: 'app-cart',
@@ -24,9 +25,8 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getCategory();
-
     
+    this.getCategory();
   }
 
   getCategory() {
@@ -37,9 +37,13 @@ export class CartComponent implements OnInit {
 
   search() {
     const query = encodeURI(this.keyword);
-
-    this.cartService.商品搜尋(this.keyword).subscribe((data: any) => {
+    
+    this.cartService.商品搜尋(this.keyword, null).subscribe((data: any) => {
       this.data = data;
     });
+  }
+
+  addToCart(id: string){
+    this.cartService.加入購物車(id).subscribe();
   }
 }

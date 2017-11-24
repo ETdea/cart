@@ -6,7 +6,8 @@ export class InMemoryDataService implements InMemoryDbService{
     const productCategories = require('./mock/product-category.json');
     const suggestions = require('./mock/suggestion.json');
     const products = require('./mock/product.json');
+    const cart = require('./mock/cart.json');
 
-    return { productCategories, suggestions, products };
+    return { productCategories, suggestions, products, cart };
   }
 }

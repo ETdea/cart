@@ -5,6 +5,9 @@ import 'rxjs/add/operator/map';
 import { HttpClient } from '@angular/common/http';
 import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
+import { keyframes } from '@angular/animations/src/animation_metadata';
+import { retry } from 'rxjs/operators/retry';
+import { DEPRECATED_PLURAL_FN } from '@angular/common/src/i18n/localization';
 
 @Injectable()
 export class CartService {
@@ -16,41 +19,79 @@ export class CartService {
 
   取搜尋建議(keyword: string): Observable<Response> {
     const query = encodeURI(keyword);
-    
-    let data = this.http.get('api/suggestions') as Observable<Response> 
+
+    let data = this.http.get('api/suggestions') as Observable<Response>
     return data;
   }
 
-  取商品分類() {
-    let data = this.http.get('api/productCategories') as Observable<Response>;
+  取商品分類<T>():Observable<T> {
+    const functionName = "取商品分類";
+    const url = "api/productCategories";
 
-    return data;     
+    let data = this.http.get(url).pipe(
+      tap(res => this.log(functionName)),
+      catchError(this.handleError(functionName))
+    );
+
+    return data as Observable<T>;
   }
 
-  商品搜尋(keyword: string) {
-    let data = this.http.get('api/products') as Observable<Response>;
+  商品搜尋<T>(keyword: string, categoryId: string):Observable<T>  {
+    const functionName = "商品搜尋";
+    const url = "api/products";
 
-    return data;   
+    let data = this.http.get(url).pipe(
+      tap(res => this.log(functionName)),
+      catchError(this.handleError(functionName))
+    );
+
+    return data as Observable<T>;
   }
 
-  商品查詢(){
-
-  }
-
-  加入購物車() {
-  }
-
-  取購物車清單() {
-  }
-
-  送出訂單(){
+  商品查詢() {
 
   }
 
-  訂單查詢(){
+  加入購物車<T>(id: string): Observable<T> {
+    const functionName = "加入購物車";
+    const url = "api/cart";
+    const body = {id: id}
 
+    let data = this.http.post(url, body).pipe(
+      tap(res => this.log(functionName)),
+      catchError(this.handleError(functionName))
+    );
+
+    return data as Observable<T>;
   }
-  private handleError<T> (operation = 'operation', result?: T) {
+
+  取購物車<T>():Observable<T> {
+    const functionName = "取購物車";
+    const url = "api/cart";
+    
+    let data = this.http.get(url).pipe(
+      tap(res => this.log(functionName)),
+      catchError(this.handleError(functionName))
+    );
+
+    return data as Observable<T>;
+  }
+
+  清除購物車() {
+  }
+
+  送出訂單() {
+  }
+
+  訂單查詢() {
+    
+  }
+
+  private log(message: string){
+    console.log(message);
+  };
+
+  private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 
       // TODO: send the error to remote logging infrastructure
@@ -60,4 +101,22 @@ export class CartService {
       return of(result as T);
     };
   }
+}
+
+export class CartStorage{
+  static key = "CARTSTORAGE";
+
+  static setItem<T>(data: T) {
+    localStorage.setItem(this.key, JSON.stringify(data));
+  }
+
+  static getItem<T>() : T {
+    return JSON.parse(localStorage[this.key]) as T;
+  }
+
+  static remove(){
+    localStorage.removeItem(this.key);
+  }
+
+  static hasData = () => CartStorage.getItem() !== "undefined";
 }
