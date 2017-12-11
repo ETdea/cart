@@ -1,3 +1,134 @@
-<p>
-  goods works!
-</p>
+<nz-card [nzBordered]=false [nzNoHovering]=true class="no-hr">
+  <ng-template #title>
+    上架商品
+  </ng-template>
+
+  <ng-template #extra>
+    <nz-input (ngModel)="keyword" [nzPlaceHolder]="'input search text'" style="width: 200px;"></nz-input>
+
+    <button nz-button [nzType]="'default'" (click)="search()">
+      <i class="anticon anticon-search"></i>
+      <span>Search</span>
+    </button>
+  </ng-template>
+
+  <ng-template #body>
+    <button nz-button nzType="dashed" nzSize="large" (click)="showModal()" style="width: 100%; margin-bottom: 8px;">
+      <span>
+        <i class="anticon anticon-plus"></i>新增</span>
+    </button>
+
+    <nz-table #nzTable [nzDataSource]="data" [nzPageSize]="10">
+      <!-- <thead nz-thead>
+          <tr>
+            <th nz-th [nzCheckbox]="true">
+              <label nz-checkbox [(ngModel)]="_allChecked" [nzIndeterminate]="_indeterminate" (ngModelChange)="_checkAll($event)">
+              </label>
+            </th>
+            <th nz-th>
+              <span>Name</span>
+            </th>
+            <th nz-th>
+              <span>Price</span>
+            </th>
+            <th nz-th>
+              <span>Action</span>
+            </th>
+          </tr>
+        </thead> -->
+      <tbody nz-tbody>
+        <tr nz-tbody-tr *ngFor="let data of nzTable.data">
+          <td nz-td [nzCheckbox]="true">
+            <label nz-checkbox [(ngModel)]="data.checked" (ngModelChange)="_refreshStatus($event)">
+            </label>
+          </td>
+          <td nz-td>
+            {{data.name}}
+          </td>
+          <td nz-td>
+            {{data.price}}
+          </td>
+          <td nz-td>
+            <a (click)="addToCart(data.id)">加入購物車</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </ng-template>
+</nz-card>
+
+<nz-modal [nzVisible]="isVisible" [nzTitle]="'新上架商品'" [nzContent]="modalContent" (nzOnCancel)="handleCancel($event)" (nzOnOk)="handleOk($event)">
+  <ng-template #modalContent>
+
+    <form nz-form (ngSubmit)="submitForm()">
+      <div nz-form-item nz-row>
+        <div nz-form-label nz-col>
+          <label>標題</label>
+        </div>
+        <div nz-form-control nz-col>
+          <nz-input nzPlaceHolder="標題">
+          </nz-input>
+        </div>
+        <div nz-form-label nz-col>
+          <label>說明</label>
+        </div>
+        <div nz-form-control nz-col>
+          <nz-input nzPlaceHolder="說明">
+          </nz-input>
+        </div>
+        <div nz-form-label nz-col>
+          <label>單位</label>
+        </div>
+        <div nz-form-control nz-col>
+          <nz-input nzPlaceHolder="單位">
+          </nz-input>
+        </div>
+        <div nz-form-label nz-col>
+          <label>價格</label>
+        </div>
+        <div nz-form-control nz-col>
+          <nz-input nzPlaceHolder="價格">
+          </nz-input>
+        </div>
+      </div>
+
+      <div nz-form-item nz-row nzGutter="8">
+        <div nz-form-label nz-col nzSpan="24">
+          <label>單位:</label>
+        </div>
+
+        <div nz-form-control nz-col nzSpan="11">
+          <nz-input nzPlaceHolder="顯示名稱">
+          </nz-input>
+        </div>
+
+        <div nz-form-control nz-col nzSpan="11">
+          <nz-input nzPlaceHolder="價格">
+          </nz-input>
+        </div>
+
+        <div nz-form-control nz-col nzSpan="2">
+          <i class="anticon anticon-minus-circle-o dynamic-delete-button" (click)="removeField(control,$event)"></i>
+        </div>
+      </div>
+
+      <div nz-form-item nz-row>
+          <div nz-form-control nz-col nzSpan="12">
+              <button nz-button nzType="dashed" [nzSize]="'large'" (click)="addField($event)">
+                <i class="anticon anticon-plus"></i>
+                <span> Add field</span>
+              </button>
+            </div>
+      </div>
+
+    </form>
+
+
+    <button nz-button [nzType]="'default'" [nzSize]="'large'" (click)="handleCancel($event)">
+      取 消
+    </button>
+    <button nz-button [nzType]="'primary'" [nzSize]="'large'" (click)="handleOk($event)" [nzLoading]="isConfirmLoading">
+      新 增
+    </button>
+  </ng-template>
+</nz-modal>

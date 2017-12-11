@@ -1,0 +1,3 @@
+:host ::ng-deep .no-hr .ant-card-head {
+    border-bottom: 0px;
+}
