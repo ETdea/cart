@@ -66,7 +66,7 @@
           <label>標題</label>
         </div>
         <div nz-form-control nz-col>
-          <nz-input nzPlaceHolder="標題">
+          <nz-input nzPlaceHolder="標題" required>
           </nz-input>
         </div>
         <div nz-form-label nz-col>
@@ -97,28 +97,35 @@
           <label>單位:</label>
         </div>
 
-        <div nz-form-control nz-col nzSpan="11">
+        <div nz-form-control nz-col nzSpan="7">
           <nz-input nzPlaceHolder="顯示名稱">
           </nz-input>
         </div>
 
-        <div nz-form-control nz-col nzSpan="11">
+        <div nz-form-control nz-col nzSpan="7">
+          <nz-input nzPlaceHolder="減去庫存數量">
+          </nz-input>
+        </div>
+
+        <div nz-form-control nz-col nzSpan="7">
           <nz-input nzPlaceHolder="價格">
           </nz-input>
         </div>
 
-        <div nz-form-control nz-col nzSpan="2">
-          <i class="anticon anticon-minus-circle-o dynamic-delete-button" (click)="removeField(control,$event)"></i>
+        <div nz-form-control nz-col nzSpan="3">
+          <button nz-button nzSize="small" nzType="default" [nzShape]="'circle'" (click)="removeField(control,$event)">
+            <i class="anticon anticon-minus"></i>
+          </button>
         </div>
       </div>
 
       <div nz-form-item nz-row>
-          <div nz-form-control nz-col nzSpan="12">
-              <button nz-button nzType="dashed" [nzSize]="'large'" (click)="addField($event)">
-                <i class="anticon anticon-plus"></i>
-                <span> Add field</span>
-              </button>
-            </div>
+        <div nz-form-control nz-col nzSpan="12">
+          <button nz-button nzType="dashed" [nzSize]="'large'" (click)="addField($event)">
+            <i class="anticon anticon-plus"></i>
+            <span> Add field</span>
+          </button>
+        </div>
       </div>
 
     </form>
