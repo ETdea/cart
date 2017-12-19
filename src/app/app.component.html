@@ -8,48 +8,24 @@
       <div class="logo">
       </div>
       <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'">
-        <li nz-submenu>
-          <span title>
-            <i class="anticon anticon-user"></i>
-            <span class="nav-text">User</span>
-          </span>
-          <ul>
-            <li nz-menu-item>Tom</li>
-            <li nz-menu-item>Bill</li>
-            <li nz-menu-item>Alex</li>
-          </ul>
-        </li>
-        <li nz-submenu>
-          <span title>
-            <i class="anticon anticon-team"></i>
-            <span class="nav-text">Team</span>
-          </span>
-          <ul>
-            <li nz-menu-item>Team 1</li>
-            <li nz-menu-item>Team 2</li>
-          </ul>
-        </li>
-        <li nz-menu-item>
-          <span>
-            <i class="anticon anticon-file"></i>
-            <span class="nav-text">File</span>
-          </span>
-        </li>
+        <!-- <li nz-menu-item>廠商</li> -->
+        <!-- <li nz-menu-item>商品</li> -->
+        <!-- <li nz-menu-item>供貨商</li> -->
+        <!-- <li nz-menu-item>進貨</li> -->
+        <li nz-menu-item>上架</li>
+        <li nz-menu-item>會員</li>
+        <li nz-menu-item>訂單</li>
+        <!-- <li nz-menu-item>出貨</li> -->
+        <!-- <li nz-menu-item>最新消息</li> -->
       </ul>
     </nz-sider>
-    <nz-layout style="min-height: 93vh">
-    <nz-content style="margin:0 16px;">
-      <nz-breadcrumb style="margin:12px 0;">
-        <nz-breadcrumb-item>User</nz-breadcrumb-item>
-        <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
-      </nz-breadcrumb>
-      <div style="padding:24px; background: #fff; min-height: 360px;">
+    <nz-layout style="min-height: 93vh; background: #fff;">
+      <nz-content>
         <!-- <router-outlet></router-outlet> -->
-      </div>
-    </nz-content>
+      </nz-content>
 
-    <nz-footer style="text-align: center;">Ant Design ©2017 Implement By Angular</nz-footer>
-    
+      <nz-footer style="text-align: center;">Ant Design ©2017 Implement By Angular</nz-footer>
+
+    </nz-layout>
   </nz-layout>
-</nz-layout>
 </nz-layout>
