@@ -12,6 +12,9 @@ import {
 })
 export class GoodsComponent implements OnInit {
   isVisible = false;
+  goods = require('../goods.json');
+  
+  
   // validateForm: FormGroup;
   
   //   submitForm() {
@@ -47,5 +50,10 @@ export class GoodsComponent implements OnInit {
 
   handleCancel(e){
     this.isVisible = false;
+  }
+
+  edit(id){
+    console.log(id);
+    this.showModal()
   }
 }

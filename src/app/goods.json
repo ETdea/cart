@@ -1,0 +1,2423 @@
+[
+    {
+        "id": "1",
+        "title": "NORVASC 脈優 5MG 28T/盒",
+        "desciption": "test data 1",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "NORVASC",
+            "chinesename": "脈優",
+            "dosage": "5MG",
+            "nhidrugcode": "BC21571100",
+            "nhiprice": "5.7",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 126
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 5.2
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title": "ADALAT CC 30MG 冠達悅【喜樂】30T/盒(拜耳)",
+        "desciption": "test data 2",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ADALAT",
+            "chinesename": "冠達悅【喜樂】",
+            "dosage": "30MG",
+            "nhidrugcode": "BA21344100",
+            "nhiprice": "0",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 150
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "ADALAT OROS 30MG 冠達悅 30T/盒",
+        "desciption": "test data 3",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ADALATOROS",
+            "chinesename": "冠達悅",
+            "dosage": "30MG",
+            "nhidrugcode": "BA22951100",
+            "nhiprice": "0",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 170
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 5.9
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "ADALAT OROS 5MG 冠達悅 30T/盒",
+        "desciption": "test data 4",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ADALATOROS",
+            "chinesename": "冠達悅",
+            "dosage": "5MG",
+            "nhidrugcode": "BC19856100",
+            "nhiprice": "0",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 70
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "title": "APROVEL 安普諾維  300MG 28T/盒 ",
+        "desciption": "test data 5",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "APROVEL",
+            "chinesename": "安普諾維",
+            "dosage": "150MG",
+            "nhidrugcode": "BC22551100",
+            "nhiprice": "7.6",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 5.7
+            },
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 270
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "title": "DIOVAN 得安穩 80MG 28T/盒",
+        "desciption": "test data 6",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "DIOVAN",
+            "chinesename": "安普諾維",
+            "dosage": "300MG ",
+            "nhidrugcode": "BC22843100",
+            "nhiprice": "13.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 145
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 5.9
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "title": "01007 DIOVAN 得安穩 160MG 28T/盒",
+        "desciption": "test data 7",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "DIOVAN",
+            "chinesename": "得安穩",
+            "dosage": "80MG",
+            "nhidrugcode": "BC23373100",
+            "nhiprice": "8.7",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 215
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "title": "01008 NESINA 25MG 耐適糖膜衣錠 28T/盒(武田)",
+        "desciption": "test data 8",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "NESINA",
+            "chinesename": "得安穩",
+            "dosage": "160MG",
+            "nhidrugcode": "BC23374100",
+            "nhiprice": "11",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 645
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "title": "01009 PROCAM 保肝膠囊 1000T/盒(永勝)",
+        "desciption": "test data 9",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "PROCAM",
+            "chinesename": "耐適糖膜衣錠",
+            "dosage": "25MG",
+            "nhidrugcode": "BC26298100",
+            "nhiprice": "22.9",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 1670
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "title": "01010 EXFOGE HCT 5/160/12.5MG 力安穩 28T/盒",
+        "desciption": "test data 10",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "EXFOGEHCT",
+            "chinesename": "保肝膠囊",
+            "dosage": "",
+            "nhidrugcode": "AC380301G0",
+            "nhiprice": "0",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 430
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 17.5
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "title": "MOSAD 5MG 胃莫傷 /粒(五洲)",
+        "desciption": "test data 11",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "MOSAD",
+            "chinesename": "力安穩",
+            "dosage": "5/160/12.5MG",
+            "nhidrugcode": "BC25419100",
+            "nhiprice": "17.7",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 0.9
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "title": "ERYTHROMYCIN 250MG-瑞士 紅黴素膠囊 1000T/瓶",
+        "desciption": "test data 12",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ERYTHROMYCIN",
+            "chinesename": "胃莫傷",
+            "dosage": "5MG",
+            "nhidrugcode": "AB55564100",
+            "nhiprice": "2.2",
+            "package": "/粒"
+        },
+        "units": [
+            {
+                "title": "瓶",
+                "subtractstockqty": 1000,
+                "price": 1400
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "title": "01013 EUZIP 50MG 優帝 /粒(永信)",
+        "desciption": "test data 13",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "EUZIP",
+            "chinesename": "紅黴素膠囊",
+            "dosage": "250MG",
+            "nhidrugcode": "AC00106100",
+            "nhiprice": "1.99",
+            "package": "1000T/瓶"
+        },
+        "units": [
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 0.94
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "title": "01014 SERETIDE 125MG EVO使肺泰-優弗",
+        "desciption": "test data 14",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "SERETIDE EVO",
+            "chinesename": "優帝",
+            "dosage": "50MG",
+            "nhidrugcode": "AC320141G0",
+            "nhiprice": "2",
+            "package": "/粒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1,
+                "price": 735
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "title": "01015 SERETIDE 250MG EVO使肺泰-優弗",
+        "desciption": "test data 15",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "SERETIDE EVO",
+            "chinesename": "EVO使肺泰-優弗",
+            "dosage": "125MG",
+            "nhidrugcode": "BC23482137",
+            "nhiprice": "896",
+            "package": ""
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1,
+                "price": 985
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "title": "01017 LIPITOR 10MG 立普妥膜衣錠 28T/盒",
+        "desciption": "test data 16",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "LIPITOR",
+            "chinesename": "EVO使肺泰-優弗",
+            "dosage": "250MG",
+            "nhidrugcode": "BC23481157",
+            "nhiprice": "1197",
+            "package": ""
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 380
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "title": "01018 LIPITOR 20MG 立普妥膜衣錠 28T/盒",
+        "desciption": "test data 17",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "LIPITOR",
+            "chinesename": "立普妥膜衣錠",
+            "dosage": "10MG",
+            "nhidrugcode": "BC22886100",
+            "nhiprice": "15.7",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 580
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 22
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "title": "01019 LIPITOR 40MG 立普妥膜衣錠 28T/盒",
+        "desciption": "test data 18",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "LIPITOR",
+            "chinesename": "立普妥膜衣錠",
+            "dosage": "20MG",
+            "nhidrugcode": "BC22890100",
+            "nhiprice": "25.2",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 665
+            },
+            {
+                "title": "排",
+                "subtractstockqty": 7,
+                "price": 168
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "title": "01020 MEVALOTIN 40MG 美百樂鎮 100T/盒",
+        "desciption": "test data 19",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "MEVALOTIN",
+            "chinesename": "立普妥膜衣錠",
+            "dosage": "40MG",
+            "nhidrugcode": "BC22889100",
+            "nhiprice": "29.6",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 100,
+                "price": 1420
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "title": "01021 SEVIKAR 5/20MG 舒脈康 28T/盒",
+        "desciption": "test data 20",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "SEVIKAR",
+            "chinesename": "美百樂鎮",
+            "dosage": "40MG",
+            "nhidrugcode": "BC23596100",
+            "nhiprice": "20",
+            "package": "100T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 238
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 9
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "title": "01022 SEVIKAR 5/40MG 舒脈康 28T/盒",
+        "desciption": "test data 21",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "SEVIKAR",
+            "chinesename": "舒脈康",
+            "dosage": "5/20MG",
+            "nhidrugcode": "BC24929100",
+            "nhiprice": "12.8",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 480
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "title": "01023 ZANIDIP 10MG 利壓  28T/盒",
+        "desciption": "test data 22",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ZANIDIP",
+            "chinesename": "舒脈康",
+            "dosage": "5/40MG",
+            "nhidrugcode": "BC26520100",
+            "nhiprice": "23.3",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 188
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 7
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "title": "01024 BLOPRESS 博脈舒 8MG 28T/盒",
+        "desciption": "test data 23",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "BLOPRESS",
+            "chinesename": "利壓",
+            "dosage": "10MG",
+            "nhidrugcode": "BC23293100",
+            "nhiprice": "7.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 215
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 8.4
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "title": "01025 CO-DIOVAN  80MG 可得安穩  28T/盒",
+        "desciption": "test data 24",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "CO-DIOVAN",
+            "chinesename": "博脈舒",
+            "dosage": "8MG",
+            "nhidrugcode": "BC23128100",
+            "nhiprice": "8.7",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 158
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 5.89
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "title": "01026 CO-DIOVAN 160MG 可得安穩  28T/盒",
+        "desciption": "test data 25",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "CO-DIOVAN",
+            "chinesename": "可得安穩",
+            "dosage": "80MG",
+            "nhidrugcode": "BC23109100",
+            "nhiprice": "8.7",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 300
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 11
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "title": "01027 CONCOR 康肯 1.25MG 30T/盒",
+        "desciption": "test data 26",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "CONCOR",
+            "chinesename": "可得安穩",
+            "dosage": "160MG",
+            "nhidrugcode": "BC23220100",
+            "nhiprice": "11",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 80
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "title": "01028 CONCOR 康肯 5MG 100T/盒",
+        "desciption": "test data 27",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "CONCOR",
+            "chinesename": "康肯",
+            "dosage": "1.25MG",
+            "nhidrugcode": "BC24039100",
+            "nhiprice": "2.63",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 100,
+                "price": 305
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "title": "01029 COZAAR 50MG 可悅您 28T/盒",
+        "desciption": "test data 28",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "COZAAR",
+            "chinesename": "康肯",
+            "dosage": "5MG",
+            "nhidrugcode": "BC17125100",
+            "nhiprice": "2.98",
+            "package": "100T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 170
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "title": "01030 COZAAR 100MG 可悅您 28T/盒",
+        "desciption": "test data 29",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "COZAAR",
+            "chinesename": "可悅您",
+            "dosage": "50MG",
+            "nhidrugcode": "BC21914100",
+            "nhiprice": "7.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 200
+            }
+        ]
+    },
+    {
+        "id": "30",
+        "title": "01031 CRESTOR 冠脂妥 5MG 28T/盒",
+        "desciption": "test data 30",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "CRESTOR",
+            "chinesename": "可悅您",
+            "dosage": "100MG",
+            "nhidrugcode": "BC23655100",
+            "nhiprice": "9.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 390
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 17
+            }
+        ]
+    },
+    {
+        "id": "31",
+        "title": "01032 CRESTOR 冠脂妥 10MG 28T/盒",
+        "desciption": "test data 31",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "CRESTOR",
+            "chinesename": "冠脂妥",
+            "dosage": "5MG",
+            "nhidrugcode": "BC24597100",
+            "nhiprice": "17.9",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 503
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 18.5
+            }
+        ]
+    },
+    {
+        "id": "32",
+        "title": "01033 ALLEGRA 60MG 艾來錠 100T/盒",
+        "desciption": "test data 32",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ALLEGRA",
+            "chinesename": "冠脂妥",
+            "dosage": "10MG",
+            "nhidrugcode": "BC24131100",
+            "nhiprice": "20.9",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 100,
+                "price": 235
+            }
+        ]
+    },
+    {
+        "id": "33",
+        "title": "01034 ALLEGRA 180MG 艾來錠 100T/盒",
+        "desciption": "test data 33",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ALLEGRA",
+            "chinesename": "艾來錠",
+            "dosage": "60MG",
+            "nhidrugcode": "BC23016100",
+            "nhiprice": "2.32",
+            "package": "100T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 100,
+                "price": 550
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 5.8
+            }
+        ]
+    },
+    {
+        "id": "34",
+        "title": "01035 EMETROL 10MG 癒吐寧 1000T/盒(瑞安)",
+        "desciption": "test data 34",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "EMETROL",
+            "chinesename": "艾來錠",
+            "dosage": "180MG",
+            "nhidrugcode": "BC23010100",
+            "nhiprice": "6",
+            "package": "100T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 560
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 0.57
+            }
+        ]
+    },
+    {
+        "id": "35",
+        "title": "01036 HYZAAR 50MG 好悅您 28T/盒",
+        "desciption": "test data 35",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "HYZAAR",
+            "chinesename": "癒吐寧",
+            "dosage": "10MG",
+            "nhidrugcode": "AB339471G0",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 170
+            }
+        ]
+    },
+    {
+        "id": "36",
+        "title": "01037 HYZAAR 100MG  好悅您  28T/盒",
+        "desciption": "test data 36",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "HYZAAR",
+            "chinesename": "好悅您",
+            "dosage": "50MG",
+            "nhidrugcode": "BC22989100",
+            "nhiprice": "7.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 200
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 7.5
+            }
+        ]
+    },
+    {
+        "id": "37",
+        "title": "01038 MICARDIS 40MG 必康平 30T/盒",
+        "desciption": "test data 37",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "MICARDIS",
+            "chinesename": "好悅您",
+            "dosage": "100MG",
+            "nhidrugcode": "BC24643100",
+            "nhiprice": "9.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 230
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 9
+            }
+        ]
+    },
+    {
+        "id": "38",
+        "title": "01039 MICARDIS 80MG 必康平 30T/盒",
+        "desciption": "test data 38",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "MICARDIS",
+            "chinesename": "必康平",
+            "dosage": "40MG",
+            "nhidrugcode": "BC23162100",
+            "nhiprice": "10.2",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 410
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 17
+            }
+        ]
+    },
+    {
+        "id": "39",
+        "title": "01040 OLMTEC 20MG 雅脈膜衣錠 28T/盒",
+        "desciption": "test data 39",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "OLMTEC",
+            "chinesename": "必康平",
+            "dosage": "80MG",
+            "nhidrugcode": "BC23161100",
+            "nhiprice": "17.4",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 205
+            }
+        ]
+    },
+    {
+        "id": "40",
+        "title": "01041 OLMTEC 40MG 雅脈膜衣錠  28T/盒",
+        "desciption": "test data 40",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "OLMTEC",
+            "chinesename": "雅脈膜衣錠",
+            "dosage": "20MG",
+            "nhidrugcode": "BC24497100",
+            "nhiprice": "11.3",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 420
+            }
+        ]
+    },
+    {
+        "id": "42",
+        "title": "01043 HYSARTAN 50/12.5MG 壓寧悅錠 28T/盒(歐帕)",
+        "desciption": "test data 41",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "HYSARTAN",
+            "chinesename": "雅脈膜衣錠",
+            "dosage": "40MG",
+            "nhidrugcode": "BC25005100",
+            "nhiprice": "20.1",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 63
+            }
+        ]
+    },
+    {
+        "id": "44",
+        "title": "01045 PLAVIX 75MG 保栓通膜衣錠 28T/盒",
+        "desciption": "test data 42",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "PLAVIX",
+            "chinesename": "壓寧悅錠",
+            "dosage": "50/12.5MG",
+            "nhidrugcode": "AA48757100",
+            "nhiprice": "7.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 1220
+            }
+        ]
+    },
+    {
+        "id": "45",
+        "title": "01046 TANATRIL 5MG 田納滋 140T/盒",
+        "desciption": "test data 43",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "TANATRIL",
+            "chinesename": "保栓通膜衣錠",
+            "dosage": "75MG",
+            "nhidrugcode": "BC22932100",
+            "nhiprice": "42.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 140,
+                "price": 950
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 7
+            }
+        ]
+    },
+    {
+        "id": "46",
+        "title": "WELLBUTRIN XL 150MG 威克倦 30T/瓶",
+        "desciption": "test data 44",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "WELLBUTRINXL",
+            "chinesename": "田納滋",
+            "dosage": "5MG",
+            "nhidrugcode": "AC43950100",
+            "nhiprice": "7.2",
+            "package": "140T/盒"
+        },
+        "units": [
+            {
+                "title": "瓶",
+                "subtractstockqty": 30,
+                "price": 630
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 21.5
+            }
+        ]
+    },
+    {
+        "id": "47",
+        "title": "01048 ANDROCUR 50MG 安得卡 /粒",
+        "desciption": "test data 45",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ANDROCUR",
+            "chinesename": "威克倦",
+            "dosage": "150MG",
+            "nhidrugcode": "BC25106100",
+            "nhiprice": "20.3",
+            "package": "30T/瓶"
+        },
+        "units": [
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 36.5
+            }
+        ]
+    },
+    {
+        "id": "48",
+        "title": "01049 MGO  氧化鎂錠 1000T/瓶(景德)",
+        "desciption": "test data 46",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "MGO",
+            "chinesename": "安得卡",
+            "dosage": "50MG",
+            "nhidrugcode": "BC12554100",
+            "nhiprice": "36",
+            "package": "/粒"
+        },
+        "units": [
+            {
+                "title": "瓶",
+                "subtractstockqty": 1000,
+                "price": 185
+            }
+        ]
+    },
+    {
+        "id": "49",
+        "title": "01050 MGO 250MG 氧化鎂錠 1000T/瓶(榮民)",
+        "desciption": "test data 47",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "MGO",
+            "chinesename": "氧化鎂錠",
+            "dosage": "",
+            "nhidrugcode": "A023521100",
+            "nhiprice": "0.17",
+            "package": "1000T/瓶"
+        },
+        "units": [
+            {
+                "title": "瓶",
+                "subtractstockqty": 1000,
+                "price": 165
+            }
+        ]
+    },
+    {
+        "id": "50",
+        "title": "01051 UROSIN 50MG 優心 1000T/盒",
+        "desciption": "test data 48",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "UROSIN",
+            "chinesename": "氧化鎂錠",
+            "dosage": "250MG",
+            "nhidrugcode": "A013382100",
+            "nhiprice": "0.17",
+            "package": "1000T/瓶"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 760
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 0.78
+            }
+        ]
+    },
+    {
+        "id": "51",
+        "title": "01052 UROSIN 100MG 優心膜衣錠 100T/盒(永信)",
+        "desciption": "test data 49",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "UROSIN",
+            "chinesename": "優心",
+            "dosage": "50MG",
+            "nhidrugcode": "AB448431G0",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 100,
+                "price": 120
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 1.3
+            }
+        ]
+    },
+    {
+        "id": "52",
+        "title": "01053 SPIRIVA 2.5MCG 適喘樂(舒沛噴)吸入劑",
+        "desciption": "test data 50",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "SPIRIVA",
+            "chinesename": "優心膜衣錠",
+            "dosage": "100MG",
+            "nhidrugcode": "AB294781G0",
+            "nhiprice": "2",
+            "package": "100T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1,
+                "price": 1600
+            }
+        ]
+    },
+    {
+        "id": "53",
+        "title": "01054 ACTEIN 600MG 愛克痰發泡錠 200T/盒",
+        "desciption": "test data 51",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ACTEIN",
+            "chinesename": "適喘樂(舒沛噴)吸入劑",
+            "dosage": "2.5MCG",
+            "nhidrugcode": "BC25033161",
+            "nhiprice": "1637",
+            "package": ""
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 200,
+                "price": 1230
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 6.3
+            }
+        ]
+    },
+    {
+        "id": "54",
+        "title": "01055 ACTEIN 100MG 愛克痰粉劑(紅) 200包/盒",
+        "desciption": "test data 52",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ACTEIN",
+            "chinesename": "愛克痰發泡錠",
+            "dosage": "600MG",
+            "nhidrugcode": "AB45993100",
+            "nhiprice": "6.3",
+            "package": "200T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 200,
+                "price": 310
+            },
+            {
+                "title": "包",
+                "subtractstockqty": 1,
+                "price": 1.6
+            }
+        ]
+    },
+    {
+        "id": "55",
+        "title": "01056 ACTEIN 100MG 愛克痰粉劑(綠) 200包/盒",
+        "desciption": "test data 53",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ACTEIN",
+            "chinesename": "愛克痰粉劑(紅)",
+            "dosage": "100MG",
+            "nhidrugcode": "A027177121",
+            "nhiprice": "1.63",
+            "package": "200包/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 200,
+                "price": 310
+            },
+            {
+                "title": "包",
+                "subtractstockqty": 1,
+                "price": 1.6
+            }
+        ]
+    },
+    {
+        "id": "56",
+        "title": "01057 XARELTO 10MG 拜瑞妥膜衣錠 10T/盒",
+        "desciption": "test data 54",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "XARELTO",
+            "chinesename": "愛克痰粉劑(綠)",
+            "dosage": "100MG",
+            "nhidrugcode": "A037598116",
+            "nhiprice": "1.66",
+            "package": "200包/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 10,
+                "price": 620
+            }
+        ]
+    },
+    {
+        "id": "57",
+        "title": "01058 XARELTO 15MG 拜瑞妥膜衣錠 30T/盒",
+        "desciption": "test data 55",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "XARELTO",
+            "chinesename": "拜瑞妥膜衣錠",
+            "dosage": "10MG",
+            "nhidrugcode": "BC25129100",
+            "nhiprice": "63",
+            "package": "10T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 1860
+            }
+        ]
+    },
+    {
+        "id": "58",
+        "title": "01059 XARELTO 20MG 拜瑞妥膜衣錠 30T/盒",
+        "desciption": "test data 56",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "XARELTO",
+            "chinesename": "拜瑞妥膜衣錠",
+            "dosage": "15MG",
+            "nhidrugcode": "BC25648100",
+            "nhiprice": "63",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 1860
+            }
+        ]
+    },
+    {
+        "id": "59",
+        "title": "01060 KOMBIGLYZE XR 5/1000MG 康併莎錠 28T/盒",
+        "desciption": "test data 57",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "KOMBIGLYZEXR",
+            "chinesename": "拜瑞妥膜衣錠",
+            "dosage": "20MG",
+            "nhidrugcode": "BC25647100",
+            "nhiprice": "63",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 490
+            }
+        ]
+    },
+    {
+        "id": "60",
+        "title": "01061 BETMIGA 25MG 貝坦利持續錠 28T/盒",
+        "desciption": "test data 58",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "BETMIGA",
+            "chinesename": "康併莎錠",
+            "dosage": "5/1000MG",
+            "nhidrugcode": "B025453100",
+            "nhiprice": "19.9",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 975
+            }
+        ]
+    },
+    {
+        "id": "61",
+        "title": "01062 UTROGESTAN 100MG 優潔通 100T/盒",
+        "desciption": "test data 59",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "UTROGESTAN",
+            "chinesename": "貝坦利持續錠",
+            "dosage": "25MG",
+            "nhidrugcode": "BC26217100",
+            "nhiprice": "36.9",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 100,
+                "price": 234
+            }
+        ]
+    },
+    {
+        "id": "62",
+        "title": "01063 CLOPIDOGREL 75MG 舒栓寧膜衣錠 28T/盒",
+        "desciption": "test data 60",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "CLOPIDOGREL",
+            "chinesename": "優潔通",
+            "dosage": "100MG",
+            "nhidrugcode": "BC25923100",
+            "nhiprice": "8.2",
+            "package": "100T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 300
+            }
+        ]
+    },
+    {
+        "id": "63",
+        "title": "01064 COAPROVEL 150MG 可普諾維 28T/盒",
+        "desciption": "test data 61",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "COAPROVEL",
+            "chinesename": "舒栓寧膜衣錠",
+            "dosage": "75MG",
+            "nhidrugcode": "BC25114100",
+            "nhiprice": "35.8",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 120
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 4.8
+            }
+        ]
+    },
+    {
+        "id": "64",
+        "title": "01065 COAPROVEL 300MG 可普諾維 28T/盒",
+        "desciption": "test data 62",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "COAPROVEL",
+            "chinesename": "可普諾維",
+            "dosage": "150MG",
+            "nhidrugcode": "BC23266100",
+            "nhiprice": "7.6",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 330
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 12.5
+            }
+        ]
+    },
+    {
+        "id": "65",
+        "title": "01066 COLCHICINE 0.5MG 可樂喜定錠 PTP 500T/盒",
+        "desciption": "test data 63",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "COLCHICINE",
+            "chinesename": "可普諾維",
+            "dosage": "300MG",
+            "nhidrugcode": "BC23267100",
+            "nhiprice": "13.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 500,
+                "price": 900
+            },
+            {
+                "title": "排",
+                "subtractstockqty": 10,
+                "price": 19
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 1.9
+            }
+        ]
+    },
+    {
+        "id": "66",
+        "title": "01067 TAKEPRON-OD 30MG 泰克胃通 140T/盒",
+        "desciption": "test data 64",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "TAKEPRON-OD",
+            "chinesename": "可樂喜定錠",
+            "dosage": "0.5MG",
+            "nhidrugcode": "AC303961G0",
+            "nhiprice": "2",
+            "package": "500T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 140,
+                "price": 2050
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 14.8
+            }
+        ]
+    },
+    {
+        "id": "67",
+        "title": "01068 LESCOL XL 80MG 益脂可 28T/盒",
+        "desciption": "test data 65",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "LESCOLXL",
+            "chinesename": "泰克胃通",
+            "dosage": "30MG",
+            "nhidrugcode": "BC24273100",
+            "nhiprice": "15.6",
+            "package": "140T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 300
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 11
+            }
+        ]
+    },
+    {
+        "id": "68",
+        "title": "01069 WELIZEN 20MG 胃利贊膜衣錠 1000T/盒",
+        "desciption": "test data 66",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "WELIZEN",
+            "chinesename": "益脂可",
+            "dosage": "80MG",
+            "nhidrugcode": "BC23556100",
+            "nhiprice": "14.6",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 700
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 0.65
+            }
+        ]
+    },
+    {
+        "id": "69",
+        "title": "01070 TRAJENTA 5MG 糖漸平膜衣錠 30T/盒",
+        "desciption": "test data 67",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "TRAJENTA",
+            "chinesename": "胃利贊膜衣錠",
+            "dosage": "20MG",
+            "nhidrugcode": "AB37601100",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 570
+            }
+        ]
+    },
+    {
+        "id": "70",
+        "title": "01071 SMILON 15MG 舒美寧膜衣錠 30T/盒(南光)",
+        "desciption": "test data 68",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "SMILON",
+            "chinesename": "糖漸平膜衣錠",
+            "dosage": "5MG",
+            "nhidrugcode": "BC25537100",
+            "nhiprice": "20.8",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 75
+            }
+        ]
+    },
+    {
+        "id": "71",
+        "title": "01072 EXFOGE 5/80MG 易安穩 28T/盒",
+        "desciption": "test data 69",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "EXFOGE",
+            "chinesename": "舒美寧膜衣錠",
+            "dosage": "15MG",
+            "nhidrugcode": "AB49240100",
+            "nhiprice": "9.2",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 300
+            }
+        ]
+    },
+    {
+        "id": "72",
+        "title": "01073 EXFOGE 5/160MG 易安穩 28T/盒",
+        "desciption": "test data 70",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "EXFOGE",
+            "chinesename": "易安穩",
+            "dosage": "5/80MG",
+            "nhidrugcode": "BC24824100",
+            "nhiprice": "14.7",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 520
+            }
+        ]
+    },
+    {
+        "id": "73",
+        "title": "01074 SENNOSIDE 12MG 仙塞落糖衣錠 1000T/盒",
+        "desciption": "test data 71",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "SENNOSIDE",
+            "chinesename": "易安穩",
+            "dosage": "5/160MG",
+            "nhidrugcode": "BC25072100",
+            "nhiprice": "21.3",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 1030
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 1.08
+            }
+        ]
+    },
+    {
+        "id": "74",
+        "title": "01075 SINPHADOL 25MG 杏化樂錠 1000T/盒",
+        "desciption": "test data 72",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "SINPHADOL",
+            "chinesename": "仙塞落糖衣錠",
+            "dosage": "12MG",
+            "nhidrugcode": "B008780100",
+            "nhiprice": "1.07",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 515
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 0.54
+            }
+        ]
+    },
+    {
+        "id": "75",
+        "title": "01076 ARCOXIA 60MG 萬克適 28T/盒",
+        "desciption": "test data 73",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ARCOXIA",
+            "chinesename": "杏化樂錠",
+            "dosage": "25MG",
+            "nhidrugcode": "AC195031G0",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 345
+            }
+        ]
+    },
+    {
+        "id": "76",
+        "title": "01077 VESICARE 5MG 衛喜康錠 30T/盒",
+        "desciption": "test data 74",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "VESICARE",
+            "chinesename": "萬克適",
+            "dosage": "60MG",
+            "nhidrugcode": "BC23983100",
+            "nhiprice": "15.3",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 850
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 29
+            }
+        ]
+    },
+    {
+        "id": "77",
+        "title": "01078 FADIN 20MG 胃樂順膜衣錠 1000T/盒",
+        "desciption": "test data 75",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "FADIN",
+            "chinesename": "衛喜康錠",
+            "dosage": "5MG",
+            "nhidrugcode": "BC24437100",
+            "nhiprice": "31.6",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 1360
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 1.4
+            }
+        ]
+    },
+    {
+        "id": "78",
+        "title": "01079 DEXILANT 60MG 得喜胃通膠囊 14T/盒",
+        "desciption": "test data 76",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "DEXILANT",
+            "chinesename": "胃樂順膜衣錠",
+            "dosage": "20MG",
+            "nhidrugcode": "AB386051G0",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 14,
+                "price": 280
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 22
+            }
+        ]
+    },
+    {
+        "id": "79",
+        "title": "01080 POZOLA 40MG 盼胃優腸溶膜衣錠 420T/盒",
+        "desciption": "test data 77",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "POZOLA",
+            "chinesename": "得喜胃通膠囊",
+            "dosage": "60MG",
+            "nhidrugcode": "BC25887100",
+            "nhiprice": "21",
+            "package": "14T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 420,
+                "price": 2400
+            },
+            {
+                "title": "排",
+                "subtractstockqty": 7,
+                "price": 50
+            }
+        ]
+    },
+    {
+        "id": "80",
+        "title": "ACTOS 15MG 愛妥糖錠 30T/盒",
+        "desciption": "test data 78",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ACTOS",
+            "chinesename": "盼胃優腸溶膜衣錠",
+            "dosage": "40MG",
+            "nhidrugcode": "AB46646100",
+            "nhiprice": "15.9",
+            "package": "420T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 365
+            }
+        ]
+    },
+    {
+        "id": "81",
+        "title": "01081 ACTOS 30MG 愛妥糖錠 30T/盒",
+        "desciption": "test data 79",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ACTOS",
+            "chinesename": "愛妥糖錠",
+            "dosage": "15MG",
+            "nhidrugcode": "BC23207100",
+            "nhiprice": "13",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 30,
+                "price": 510
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 18
+            }
+        ]
+    },
+    {
+        "id": "82",
+        "title": "01082 FLUITRAN 2MG 服爾伊得安 1000T/盒",
+        "desciption": "test data 80",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "FLUITRAN",
+            "chinesename": "愛妥糖錠",
+            "dosage": "30MG",
+            "nhidrugcode": "BC23206100",
+            "nhiprice": "17.9",
+            "package": "30T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 1650
+            },
+            {
+                "title": "排",
+                "subtractstockqty": 10,
+                "price": 17
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 1.7
+            }
+        ]
+    },
+    {
+        "id": "83",
+        "title": "01083 EDARBI 40MG 易得平 28T/盒",
+        "desciption": "test data 81",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "EDARBI",
+            "chinesename": "服爾伊得安",
+            "dosage": "2MG",
+            "nhidrugcode": "AC460281G0",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 395
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 15.7
+            }
+        ]
+    },
+    {
+        "id": "84",
+        "title": "01084 GLUCOPHAGE 850MG 庫魯化 210T/盒",
+        "desciption": "test data 82",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "GLUCOPHAGE",
+            "chinesename": "易得平",
+            "dosage": "40MG",
+            "nhidrugcode": "BC25756100",
+            "nhiprice": "15.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 210,
+                "price": 1220
+            },
+            {
+                "title": "排",
+                "subtractstockqty": 14,
+                "price": 30
+            }
+        ]
+    },
+    {
+        "id": "85",
+        "title": "01085 GLUCOPHAGE 500MG 庫魯化 700T/盒",
+        "desciption": "test data 83",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "GLUCOPHAGE",
+            "chinesename": "庫魯化",
+            "dosage": "850MG",
+            "nhidrugcode": "BC18231100",
+            "nhiprice": "2.01",
+            "package": "210T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 700,
+                "price": 400
+            },
+            {
+                "title": "排",
+                "subtractstockqty": 14,
+                "price": 25
+            }
+        ]
+    },
+    {
+        "id": "86",
+        "title": "01086 LOSARTAN 50MG 那寶錠 28/盒",
+        "desciption": "test data 84",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "LOSARTAN",
+            "chinesename": "庫魯化",
+            "dosage": "500MG",
+            "nhidrugcode": "BC071521G0",
+            "nhiprice": "2",
+            "package": "700T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 45
+            }
+        ]
+    },
+    {
+        "id": "87",
+        "title": "01087 MEDICON-A 20MG 滅咳康複合膠囊 1000T/盒",
+        "desciption": "test data 85",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "MEDICON-A",
+            "chinesename": "那寶錠",
+            "dosage": "50MG",
+            "nhidrugcode": "AB57103100",
+            "nhiprice": "7.4",
+            "package": "28/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 1800
+            },
+            {
+                "title": "排",
+                "subtractstockqty": 28,
+                "price": 21
+            }
+        ]
+    },
+    {
+        "id": "88",
+        "title": "01088 BOKEY 100MG 伯基膠囊 980T/盒(永信)",
+        "desciption": "test data 86",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "BOKEY",
+            "chinesename": "滅咳康複合膠囊",
+            "dosage": "20MG",
+            "nhidrugcode": "AC217581G0",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 980,
+                "price": 735
+            }
+        ]
+    },
+    {
+        "id": "89",
+        "title": "01089 FEBURIC 80MG 福避痛錠 28T/盒",
+        "desciption": "test data 87",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "FEBURIC",
+            "chinesename": "伯基膠囊",
+            "dosage": "100MG",
+            "nhidrugcode": "AC373441G0",
+            "nhiprice": "2",
+            "package": "980T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 645
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 23.5
+            }
+        ]
+    },
+    {
+        "id": "90",
+        "title": "01090 OMELON 20MG 護胃康腸溶膠囊 30T/瓶",
+        "desciption": "test data 88",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "OMELON",
+            "chinesename": "福避痛錠",
+            "dosage": "80MG",
+            "nhidrugcode": "BC25427100",
+            "nhiprice": "23.4",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "瓶",
+                "subtractstockqty": 30,
+                "price": 138
+            }
+        ]
+    },
+    {
+        "id": "91",
+        "title": "01091 BAKTAR 400MG 撲菌特錠 PTP 1000T/盒",
+        "desciption": "test data 89",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "BAKTAR",
+            "chinesename": "護胃康腸溶膠囊",
+            "dosage": "20MG",
+            "nhidrugcode": "BC25427100",
+            "nhiprice": "2.51",
+            "package": "30T/瓶"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 1630
+            },
+            {
+                "title": "排",
+                "subtractstockqty": 10,
+                "price": 16.5
+            }
+        ]
+    },
+    {
+        "id": "92",
+        "title": "01092 GLUCOMET 5/500MG 克醣美錠 56T/盒",
+        "desciption": "test data 90",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "GLUCOMET",
+            "chinesename": "撲菌特錠",
+            "dosage": "400MG",
+            "nhidrugcode": "AC049191G0",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 56,
+                "price": 133
+            }
+        ]
+    },
+    {
+        "id": "93",
+        "title": "01093 LICODIN 100MG 利血達 200T/盒",
+        "desciption": "test data 91",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "LICODIN",
+            "chinesename": "克醣美錠",
+            "dosage": "5/500MG",
+            "nhidrugcode": "AC46733100",
+            "nhiprice": "2.42",
+            "package": "56T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 200,
+                "price": 680
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 3.5
+            }
+        ]
+    },
+    {
+        "id": "94",
+        "title": "01094 TOPAMAX 100MG 妥泰膜衣錠",
+        "desciption": "test data 92",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "TOPAMAX",
+            "chinesename": "利血達",
+            "dosage": "100MG",
+            "nhidrugcode": "AB31596100",
+            "nhiprice": "4.24",
+            "package": "200T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 60,
+                "price": 2000
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 22
+            }
+        ]
+    },
+    {
+        "id": "95",
+        "title": "01095 NIFEDIPINE 30MG 恆脈循持續錠 280T/盒",
+        "desciption": "test data 93",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "NIFEDIPINE",
+            "chinesename": "妥泰膜衣錠",
+            "dosage": "100MG",
+            "nhidrugcode": "BC22508100",
+            "nhiprice": "33.2",
+            "package": ""
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 280,
+                "price": 1060
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 3.85
+            }
+        ]
+    },
+    {
+        "id": "96",
+        "title": "01096 ACTOSMET 15/850MG 愛妥蜜錠 28T/盒",
+        "desciption": "test data 94",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ACTOSMET",
+            "chinesename": "恆脈循持續錠",
+            "dosage": "30MG",
+            "nhidrugcode": "AC57219100",
+            "nhiprice": "7.3",
+            "package": "280T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 310
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 13
+            }
+        ]
+    },
+    {
+        "id": "97",
+        "title": "01097 ALLOPURINOL 安樂普利諾 1000T/盒(永信)",
+        "desciption": "test data 95",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ALLOPURINOL",
+            "chinesename": "愛妥蜜錠",
+            "dosage": "15/850MG",
+            "nhidrugcode": "BC24839100",
+            "nhiprice": "12.3",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 1000,
+                "price": 1085
+            },
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 1.1
+            }
+        ]
+    },
+    {
+        "id": "98",
+        "title": "01098 KERLONE 可絡暢錠 28T/盒",
+        "desciption": "test data 96",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "KERLONE",
+            "chinesename": "安樂普利諾",
+            "dosage": "",
+            "nhidrugcode": "AC142281G0",
+            "nhiprice": "2",
+            "package": "1000T/盒"
+        },
+        "units": [
+            {
+                "title": "盒",
+                "subtractstockqty": 28,
+                "price": 109
+            }
+        ]
+    },
+    {
+        "id": "99",
+        "title": "01099 FYLIN 400MG 暢循持續錠",
+        "desciption": "test data 97",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "FYLIN",
+            "chinesename": "可絡暢錠",
+            "dosage": "",
+            "nhidrugcode": "BC21530100",
+            "nhiprice": "4.24",
+            "package": "28T/盒"
+        },
+        "units": [
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 2.2
+            }
+        ]
+    },
+    {
+        "id": "100",
+        "title": "01100 ALLOPURINOL 安樂普諾錠 10T/排(生達)",
+        "desciption": "test data 98",
+        "startdate": "",
+        "enddate": "",
+        "products": {
+            "name": "ALLOPURINOL",
+            "chinesename": "暢循持續錠",
+            "dosage": "400MG",
+            "nhidrugcode": "AC41488100",
+            "nhiprice": "2.07",
+            "package": ""
+        },
+        "units": [
+            {
+                "title": "粒",
+                "subtractstockqty": 1,
+                "price": 1.2
+            }
+        ]
+    }
+]
