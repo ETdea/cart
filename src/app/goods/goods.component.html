@@ -1,74 +1,27 @@
 <div nz-row>
   <div nz-col nzSpan="3">
-    <nz-input (ngModel)="keyword" [nzPlaceHolder]="'input search text'" style="width: 200px;"></nz-input>
-
-
+    <nz-input nzType="search" [(ngModel)]="keyword" nzPlaceHolder="搜尋" style="width: 100%;" (keyup.enter)="search()"></nz-input>
   </div>
-  <div nz-col nzSpan="2">
+  <!-- <div nz-col nzSpan="2">
     <button nz-button [nzType]="'default'" (click)="search()">
       <i class="anticon anticon-search"></i>
       <span>Search</span>
     </button>
-  </div>
+  </div> -->
   <div nz-col nzSpan="4">
-    <button nz-button nzType="dashed" nzSize="large" (click)="showModal()">
+    <button nz-button nzType="dashed" (click)="showModal()">
       <span>
         <i class="anticon anticon-plus"></i>新增</span>
     </button>
   </div>
 </div>
-<!-- <div nz-row>
-  <div nz-col *ngFor="let item of goods">
-    <nz-card nzBordered="false" nzLoading>
-      <ng-template #body>
-        <div nz-row>
-          <div nz-col nzSpan="2">
-              <p>{{ item.products.chinesename }}  {{ item.products.dosage }}</p>
-              <p>{{ item.products.name }}</p>
-              <p>{{ item.products.package }}</p>
-          </div>
-          <div nz-col nzSpan="2">
-            <p>{{ item.products.nhidrugcode }}</p>
-            <p>${{ item.products.nhiprice }}</p>
-          </div>
-          <div nz-col nzSpan="2">
-              <span *ngFor="let unit of item.units"> {{ unit.subtractstockqty }} / {{ unit.title }} ${{ unit.price}} <br></span>
-          </div>
-        </div>
-      </ng-template>
-    </nz-card>
-  </div>
-</div> -->
-
-
 
 <div nz-row>
   <nz-table #nzTable [nzDataSource]="goods" nzPageSize="10" nzDataChange="nzData">
-    <!-- <thead nz-thead>
-        <tr>
-          <th nz-th [nzCheckbox]="true">
-            <label nz-checkbox [(ngModel)]="_allChecked" [nzIndeterminate]="_indeterminate" (ngModelChange)="_checkAll($event)">
-            </label>
-          </th>
-          <th nz-th>
-            <span>Name</span>
-          </th>
-          <th nz-th>
-            <span>Price</span>
-          </th>
-          <th nz-th>
-            <span>Action</span>
-          </th>
-        </tr>
-      </thead> -->
     <tbody nz-tbody>
       <tr nz-tbody-tr *ngFor="let data of nzTable.data" (click)="edit(data.id)">
-        <!-- <td nz-td [nzCheckbox]="true">
-          <label nz-checkbox [(ngModel)]="data.checked" (ngModelChange)="_refreshStatus($event)">
-          </label>
-        </td> -->
         <td nz-td>
-          <p>{{ data.products.chinesename }} {{ data.products.dosage }}</p>
+          <p>{{ data.products.producer }} {{ data.products.chinesename }} {{ data.products.dosage }}</p>
           <p>{{ data.products.name }}</p>
           <p>{{ data.products.package }}</p>
         </td>

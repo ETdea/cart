@@ -8,6 +8,7 @@
         "products": {
             "name": "NORVASC",
             "chinesename": "脈優",
+            "producer": "",
             "dosage": "5MG",
             "nhidrugcode": "BC21571100",
             "nhiprice": "5.7",
@@ -35,6 +36,7 @@
         "products": {
             "name": "ADALAT",
             "chinesename": "冠達悅【喜樂】",
+            "producer": "拜耳",
             "dosage": "30MG",
             "nhidrugcode": "BA21344100",
             "nhiprice": "0",
@@ -57,6 +59,7 @@
         "products": {
             "name": "ADALATOROS",
             "chinesename": "冠達悅",
+            "producer": "",
             "dosage": "30MG",
             "nhidrugcode": "BA22951100",
             "nhiprice": "0",
@@ -84,6 +87,7 @@
         "products": {
             "name": "ADALATOROS",
             "chinesename": "冠達悅",
+            "producer": "",
             "dosage": "5MG",
             "nhidrugcode": "BC19856100",
             "nhiprice": "0",
@@ -106,6 +110,7 @@
         "products": {
             "name": "APROVEL",
             "chinesename": "安普諾維",
+            "producer": "",
             "dosage": "150MG",
             "nhidrugcode": "BC22551100",
             "nhiprice": "7.6",
@@ -133,6 +138,7 @@
         "products": {
             "name": "DIOVAN",
             "chinesename": "安普諾維",
+            "producer": "",
             "dosage": "300MG ",
             "nhidrugcode": "BC22843100",
             "nhiprice": "13.4",
@@ -160,6 +166,7 @@
         "products": {
             "name": "DIOVAN",
             "chinesename": "得安穩",
+            "producer": "",
             "dosage": "80MG",
             "nhidrugcode": "BC23373100",
             "nhiprice": "8.7",
@@ -182,6 +189,7 @@
         "products": {
             "name": "NESINA",
             "chinesename": "得安穩",
+            "producer": "武田",
             "dosage": "160MG",
             "nhidrugcode": "BC23374100",
             "nhiprice": "11",
@@ -204,6 +212,7 @@
         "products": {
             "name": "PROCAM",
             "chinesename": "耐適糖膜衣錠",
+            "producer": "永勝",
             "dosage": "25MG",
             "nhidrugcode": "BC26298100",
             "nhiprice": "22.9",
@@ -226,6 +235,7 @@
         "products": {
             "name": "EXFOGEHCT",
             "chinesename": "保肝膠囊",
+            "producer": "",
             "dosage": "",
             "nhidrugcode": "AC380301G0",
             "nhiprice": "0",
@@ -253,6 +263,7 @@
         "products": {
             "name": "MOSAD",
             "chinesename": "力安穩",
+            "producer": "五洲",
             "dosage": "5/160/12.5MG",
             "nhidrugcode": "BC25419100",
             "nhiprice": "17.7",
@@ -275,6 +286,7 @@
         "products": {
             "name": "ERYTHROMYCIN",
             "chinesename": "胃莫傷",
+            "producer": "瑞士",
             "dosage": "5MG",
             "nhidrugcode": "AB55564100",
             "nhiprice": "2.2",
@@ -297,6 +309,7 @@
         "products": {
             "name": "EUZIP",
             "chinesename": "紅黴素膠囊",
+            "producer": "永信",
             "dosage": "250MG",
             "nhidrugcode": "AC00106100",
             "nhiprice": "1.99",
@@ -319,6 +332,7 @@
         "products": {
             "name": "SERETIDE EVO",
             "chinesename": "優帝",
+            "producer": "",
             "dosage": "50MG",
             "nhidrugcode": "AC320141G0",
             "nhiprice": "2",
@@ -341,6 +355,7 @@
         "products": {
             "name": "SERETIDE EVO",
             "chinesename": "EVO使肺泰-優弗",
+            "producer": "",
             "dosage": "125MG",
             "nhidrugcode": "BC23482137",
             "nhiprice": "896",
@@ -363,6 +378,7 @@
         "products": {
             "name": "LIPITOR",
             "chinesename": "EVO使肺泰-優弗",
+            "producer": "",
             "dosage": "250MG",
             "nhidrugcode": "BC23481157",
             "nhiprice": "1197",
@@ -385,6 +401,7 @@
         "products": {
             "name": "LIPITOR",
             "chinesename": "立普妥膜衣錠",
+            "producer": "",
             "dosage": "10MG",
             "nhidrugcode": "BC22886100",
             "nhiprice": "15.7",
@@ -412,6 +429,7 @@
         "products": {
             "name": "LIPITOR",
             "chinesename": "立普妥膜衣錠",
+            "producer": "",
             "dosage": "20MG",
             "nhidrugcode": "BC22890100",
             "nhiprice": "25.2",
@@ -439,6 +457,7 @@
         "products": {
             "name": "MEVALOTIN",
             "chinesename": "立普妥膜衣錠",
+            "producer": "",
             "dosage": "40MG",
             "nhidrugcode": "BC22889100",
             "nhiprice": "29.6",
@@ -461,6 +480,7 @@
         "products": {
             "name": "SEVIKAR",
             "chinesename": "美百樂鎮",
+            "producer": "",
             "dosage": "40MG",
             "nhidrugcode": "BC23596100",
             "nhiprice": "20",
@@ -488,6 +508,7 @@
         "products": {
             "name": "SEVIKAR",
             "chinesename": "舒脈康",
+            "producer": "",
             "dosage": "5/20MG",
             "nhidrugcode": "BC24929100",
             "nhiprice": "12.8",
@@ -510,6 +531,7 @@
         "products": {
             "name": "ZANIDIP",
             "chinesename": "舒脈康",
+            "producer": "",
             "dosage": "5/40MG",
             "nhidrugcode": "BC26520100",
             "nhiprice": "23.3",
@@ -537,6 +559,7 @@
         "products": {
             "name": "BLOPRESS",
             "chinesename": "利壓",
+            "producer": "",
             "dosage": "10MG",
             "nhidrugcode": "BC23293100",
             "nhiprice": "7.4",
@@ -564,6 +587,7 @@
         "products": {
             "name": "CO-DIOVAN",
             "chinesename": "博脈舒",
+            "producer": "",
             "dosage": "8MG",
             "nhidrugcode": "BC23128100",
             "nhiprice": "8.7",
@@ -591,6 +615,7 @@
         "products": {
             "name": "CO-DIOVAN",
             "chinesename": "可得安穩",
+            "producer": "",
             "dosage": "80MG",
             "nhidrugcode": "BC23109100",
             "nhiprice": "8.7",
@@ -618,6 +643,7 @@
         "products": {
             "name": "CONCOR",
             "chinesename": "可得安穩",
+            "producer": "",
             "dosage": "160MG",
             "nhidrugcode": "BC23220100",
             "nhiprice": "11",
@@ -640,6 +666,7 @@
         "products": {
             "name": "CONCOR",
             "chinesename": "康肯",
+            "producer": "",
             "dosage": "1.25MG",
             "nhidrugcode": "BC24039100",
             "nhiprice": "2.63",
@@ -662,6 +689,7 @@
         "products": {
             "name": "COZAAR",
             "chinesename": "康肯",
+            "producer": "",
             "dosage": "5MG",
             "nhidrugcode": "BC17125100",
             "nhiprice": "2.98",
@@ -684,6 +712,7 @@
         "products": {
             "name": "COZAAR",
             "chinesename": "可悅您",
+            "producer": "",
             "dosage": "50MG",
             "nhidrugcode": "BC21914100",
             "nhiprice": "7.4",
@@ -706,6 +735,7 @@
         "products": {
             "name": "CRESTOR",
             "chinesename": "可悅您",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "BC23655100",
             "nhiprice": "9.4",
@@ -733,6 +763,7 @@
         "products": {
             "name": "CRESTOR",
             "chinesename": "冠脂妥",
+            "producer": "",
             "dosage": "5MG",
             "nhidrugcode": "BC24597100",
             "nhiprice": "17.9",
@@ -760,6 +791,7 @@
         "products": {
             "name": "ALLEGRA",
             "chinesename": "冠脂妥",
+            "producer": "",
             "dosage": "10MG",
             "nhidrugcode": "BC24131100",
             "nhiprice": "20.9",
@@ -782,6 +814,7 @@
         "products": {
             "name": "ALLEGRA",
             "chinesename": "艾來錠",
+            "producer": "",
             "dosage": "60MG",
             "nhidrugcode": "BC23016100",
             "nhiprice": "2.32",
@@ -809,6 +842,7 @@
         "products": {
             "name": "EMETROL",
             "chinesename": "艾來錠",
+            "producer": "瑞安",
             "dosage": "180MG",
             "nhidrugcode": "BC23010100",
             "nhiprice": "6",
@@ -836,6 +870,7 @@
         "products": {
             "name": "HYZAAR",
             "chinesename": "癒吐寧",
+            "producer": "",
             "dosage": "10MG",
             "nhidrugcode": "AB339471G0",
             "nhiprice": "2",
@@ -858,6 +893,7 @@
         "products": {
             "name": "HYZAAR",
             "chinesename": "好悅您",
+            "producer": "",
             "dosage": "50MG",
             "nhidrugcode": "BC22989100",
             "nhiprice": "7.4",
@@ -885,6 +921,7 @@
         "products": {
             "name": "MICARDIS",
             "chinesename": "好悅您",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "BC24643100",
             "nhiprice": "9.4",
@@ -912,6 +949,7 @@
         "products": {
             "name": "MICARDIS",
             "chinesename": "必康平",
+            "producer": "",
             "dosage": "40MG",
             "nhidrugcode": "BC23162100",
             "nhiprice": "10.2",
@@ -939,6 +977,7 @@
         "products": {
             "name": "OLMTEC",
             "chinesename": "必康平",
+            "producer": "",
             "dosage": "80MG",
             "nhidrugcode": "BC23161100",
             "nhiprice": "17.4",
@@ -961,6 +1000,7 @@
         "products": {
             "name": "OLMTEC",
             "chinesename": "雅脈膜衣錠",
+            "producer": "",
             "dosage": "20MG",
             "nhidrugcode": "BC24497100",
             "nhiprice": "11.3",
@@ -983,6 +1023,7 @@
         "products": {
             "name": "HYSARTAN",
             "chinesename": "雅脈膜衣錠",
+            "producer": "歐帕",
             "dosage": "40MG",
             "nhidrugcode": "BC25005100",
             "nhiprice": "20.1",
@@ -1005,6 +1046,7 @@
         "products": {
             "name": "PLAVIX",
             "chinesename": "壓寧悅錠",
+            "producer": "",
             "dosage": "50/12.5MG",
             "nhidrugcode": "AA48757100",
             "nhiprice": "7.4",
@@ -1027,6 +1069,7 @@
         "products": {
             "name": "TANATRIL",
             "chinesename": "保栓通膜衣錠",
+            "producer": "",
             "dosage": "75MG",
             "nhidrugcode": "BC22932100",
             "nhiprice": "42.4",
@@ -1054,6 +1097,7 @@
         "products": {
             "name": "WELLBUTRINXL",
             "chinesename": "田納滋",
+            "producer": "",
             "dosage": "5MG",
             "nhidrugcode": "AC43950100",
             "nhiprice": "7.2",
@@ -1081,6 +1125,7 @@
         "products": {
             "name": "ANDROCUR",
             "chinesename": "威克倦",
+            "producer": "",
             "dosage": "150MG",
             "nhidrugcode": "BC25106100",
             "nhiprice": "20.3",
@@ -1103,6 +1148,7 @@
         "products": {
             "name": "MGO",
             "chinesename": "安得卡",
+            "producer": "景德",
             "dosage": "50MG",
             "nhidrugcode": "BC12554100",
             "nhiprice": "36",
@@ -1125,6 +1171,7 @@
         "products": {
             "name": "MGO",
             "chinesename": "氧化鎂錠",
+            "producer": "榮民",
             "dosage": "",
             "nhidrugcode": "A023521100",
             "nhiprice": "0.17",
@@ -1147,6 +1194,7 @@
         "products": {
             "name": "UROSIN",
             "chinesename": "氧化鎂錠",
+            "producer": "",
             "dosage": "250MG",
             "nhidrugcode": "A013382100",
             "nhiprice": "0.17",
@@ -1174,6 +1222,7 @@
         "products": {
             "name": "UROSIN",
             "chinesename": "優心",
+            "producer": "永信",
             "dosage": "50MG",
             "nhidrugcode": "AB448431G0",
             "nhiprice": "2",
@@ -1201,6 +1250,7 @@
         "products": {
             "name": "SPIRIVA",
             "chinesename": "優心膜衣錠",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "AB294781G0",
             "nhiprice": "2",
@@ -1223,6 +1273,7 @@
         "products": {
             "name": "ACTEIN",
             "chinesename": "適喘樂(舒沛噴)吸入劑",
+            "producer": "",
             "dosage": "2.5MCG",
             "nhidrugcode": "BC25033161",
             "nhiprice": "1637",
@@ -1250,6 +1301,7 @@
         "products": {
             "name": "ACTEIN",
             "chinesename": "愛克痰發泡錠",
+            "producer": "",
             "dosage": "600MG",
             "nhidrugcode": "AB45993100",
             "nhiprice": "6.3",
@@ -1277,6 +1329,7 @@
         "products": {
             "name": "ACTEIN",
             "chinesename": "愛克痰粉劑(紅)",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "A027177121",
             "nhiprice": "1.63",
@@ -1304,6 +1357,7 @@
         "products": {
             "name": "XARELTO",
             "chinesename": "愛克痰粉劑(綠)",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "A037598116",
             "nhiprice": "1.66",
@@ -1326,6 +1380,7 @@
         "products": {
             "name": "XARELTO",
             "chinesename": "拜瑞妥膜衣錠",
+            "producer": "",
             "dosage": "10MG",
             "nhidrugcode": "BC25129100",
             "nhiprice": "63",
@@ -1348,6 +1403,7 @@
         "products": {
             "name": "XARELTO",
             "chinesename": "拜瑞妥膜衣錠",
+            "producer": "",
             "dosage": "15MG",
             "nhidrugcode": "BC25648100",
             "nhiprice": "63",
@@ -1370,6 +1426,7 @@
         "products": {
             "name": "KOMBIGLYZEXR",
             "chinesename": "拜瑞妥膜衣錠",
+            "producer": "",
             "dosage": "20MG",
             "nhidrugcode": "BC25647100",
             "nhiprice": "63",
@@ -1392,6 +1449,7 @@
         "products": {
             "name": "BETMIGA",
             "chinesename": "康併莎錠",
+            "producer": "",
             "dosage": "5/1000MG",
             "nhidrugcode": "B025453100",
             "nhiprice": "19.9",
@@ -1414,6 +1472,7 @@
         "products": {
             "name": "UTROGESTAN",
             "chinesename": "貝坦利持續錠",
+            "producer": "",
             "dosage": "25MG",
             "nhidrugcode": "BC26217100",
             "nhiprice": "36.9",
@@ -1436,6 +1495,7 @@
         "products": {
             "name": "CLOPIDOGREL",
             "chinesename": "優潔通",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "BC25923100",
             "nhiprice": "8.2",
@@ -1458,6 +1518,7 @@
         "products": {
             "name": "COAPROVEL",
             "chinesename": "舒栓寧膜衣錠",
+            "producer": "",
             "dosage": "75MG",
             "nhidrugcode": "BC25114100",
             "nhiprice": "35.8",
@@ -1485,6 +1546,7 @@
         "products": {
             "name": "COAPROVEL",
             "chinesename": "可普諾維",
+            "producer": "",
             "dosage": "150MG",
             "nhidrugcode": "BC23266100",
             "nhiprice": "7.6",
@@ -1512,6 +1574,7 @@
         "products": {
             "name": "COLCHICINE",
             "chinesename": "可普諾維",
+            "producer": "",
             "dosage": "300MG",
             "nhidrugcode": "BC23267100",
             "nhiprice": "13.4",
@@ -1544,6 +1607,7 @@
         "products": {
             "name": "TAKEPRON-OD",
             "chinesename": "可樂喜定錠",
+            "producer": "",
             "dosage": "0.5MG",
             "nhidrugcode": "AC303961G0",
             "nhiprice": "2",
@@ -1571,6 +1635,7 @@
         "products": {
             "name": "LESCOLXL",
             "chinesename": "泰克胃通",
+            "producer": "",
             "dosage": "30MG",
             "nhidrugcode": "BC24273100",
             "nhiprice": "15.6",
@@ -1598,6 +1663,7 @@
         "products": {
             "name": "WELIZEN",
             "chinesename": "益脂可",
+            "producer": "",
             "dosage": "80MG",
             "nhidrugcode": "BC23556100",
             "nhiprice": "14.6",
@@ -1625,6 +1691,7 @@
         "products": {
             "name": "TRAJENTA",
             "chinesename": "胃利贊膜衣錠",
+            "producer": "",
             "dosage": "20MG",
             "nhidrugcode": "AB37601100",
             "nhiprice": "2",
@@ -1647,6 +1714,7 @@
         "products": {
             "name": "SMILON",
             "chinesename": "糖漸平膜衣錠",
+            "producer": "南光",
             "dosage": "5MG",
             "nhidrugcode": "BC25537100",
             "nhiprice": "20.8",
@@ -1669,6 +1737,7 @@
         "products": {
             "name": "EXFOGE",
             "chinesename": "舒美寧膜衣錠",
+            "producer": "",
             "dosage": "15MG",
             "nhidrugcode": "AB49240100",
             "nhiprice": "9.2",
@@ -1691,6 +1760,7 @@
         "products": {
             "name": "EXFOGE",
             "chinesename": "易安穩",
+            "producer": "",
             "dosage": "5/80MG",
             "nhidrugcode": "BC24824100",
             "nhiprice": "14.7",
@@ -1713,6 +1783,7 @@
         "products": {
             "name": "SENNOSIDE",
             "chinesename": "易安穩",
+            "producer": "",
             "dosage": "5/160MG",
             "nhidrugcode": "BC25072100",
             "nhiprice": "21.3",
@@ -1740,6 +1811,7 @@
         "products": {
             "name": "SINPHADOL",
             "chinesename": "仙塞落糖衣錠",
+            "producer": "",
             "dosage": "12MG",
             "nhidrugcode": "B008780100",
             "nhiprice": "1.07",
@@ -1767,6 +1839,7 @@
         "products": {
             "name": "ARCOXIA",
             "chinesename": "杏化樂錠",
+            "producer": "",
             "dosage": "25MG",
             "nhidrugcode": "AC195031G0",
             "nhiprice": "2",
@@ -1789,6 +1862,7 @@
         "products": {
             "name": "VESICARE",
             "chinesename": "萬克適",
+            "producer": "",
             "dosage": "60MG",
             "nhidrugcode": "BC23983100",
             "nhiprice": "15.3",
@@ -1816,6 +1890,7 @@
         "products": {
             "name": "FADIN",
             "chinesename": "衛喜康錠",
+            "producer": "",
             "dosage": "5MG",
             "nhidrugcode": "BC24437100",
             "nhiprice": "31.6",
@@ -1843,6 +1918,7 @@
         "products": {
             "name": "DEXILANT",
             "chinesename": "胃樂順膜衣錠",
+            "producer": "",
             "dosage": "20MG",
             "nhidrugcode": "AB386051G0",
             "nhiprice": "2",
@@ -1870,6 +1946,7 @@
         "products": {
             "name": "POZOLA",
             "chinesename": "得喜胃通膠囊",
+            "producer": "",
             "dosage": "60MG",
             "nhidrugcode": "BC25887100",
             "nhiprice": "21",
@@ -1897,6 +1974,7 @@
         "products": {
             "name": "ACTOS",
             "chinesename": "盼胃優腸溶膜衣錠",
+            "producer": "",
             "dosage": "40MG",
             "nhidrugcode": "AB46646100",
             "nhiprice": "15.9",
@@ -1919,6 +1997,7 @@
         "products": {
             "name": "ACTOS",
             "chinesename": "愛妥糖錠",
+            "producer": "",
             "dosage": "15MG",
             "nhidrugcode": "BC23207100",
             "nhiprice": "13",
@@ -1946,6 +2025,7 @@
         "products": {
             "name": "FLUITRAN",
             "chinesename": "愛妥糖錠",
+            "producer": "",
             "dosage": "30MG",
             "nhidrugcode": "BC23206100",
             "nhiprice": "17.9",
@@ -1978,6 +2058,7 @@
         "products": {
             "name": "EDARBI",
             "chinesename": "服爾伊得安",
+            "producer": "",
             "dosage": "2MG",
             "nhidrugcode": "AC460281G0",
             "nhiprice": "2",
@@ -2005,6 +2086,7 @@
         "products": {
             "name": "GLUCOPHAGE",
             "chinesename": "易得平",
+            "producer": "",
             "dosage": "40MG",
             "nhidrugcode": "BC25756100",
             "nhiprice": "15.4",
@@ -2032,6 +2114,7 @@
         "products": {
             "name": "GLUCOPHAGE",
             "chinesename": "庫魯化",
+            "producer": "",
             "dosage": "850MG",
             "nhidrugcode": "BC18231100",
             "nhiprice": "2.01",
@@ -2059,6 +2142,7 @@
         "products": {
             "name": "LOSARTAN",
             "chinesename": "庫魯化",
+            "producer": "",
             "dosage": "500MG",
             "nhidrugcode": "BC071521G0",
             "nhiprice": "2",
@@ -2081,6 +2165,7 @@
         "products": {
             "name": "MEDICON-A",
             "chinesename": "那寶錠",
+            "producer": "",
             "dosage": "50MG",
             "nhidrugcode": "AB57103100",
             "nhiprice": "7.4",
@@ -2108,6 +2193,7 @@
         "products": {
             "name": "BOKEY",
             "chinesename": "滅咳康複合膠囊",
+            "producer": "永信",
             "dosage": "20MG",
             "nhidrugcode": "AC217581G0",
             "nhiprice": "2",
@@ -2130,6 +2216,7 @@
         "products": {
             "name": "FEBURIC",
             "chinesename": "伯基膠囊",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "AC373441G0",
             "nhiprice": "2",
@@ -2157,6 +2244,7 @@
         "products": {
             "name": "OMELON",
             "chinesename": "福避痛錠",
+            "producer": "",
             "dosage": "80MG",
             "nhidrugcode": "BC25427100",
             "nhiprice": "23.4",
@@ -2179,6 +2267,7 @@
         "products": {
             "name": "BAKTAR",
             "chinesename": "護胃康腸溶膠囊",
+            "producer": "",
             "dosage": "20MG",
             "nhidrugcode": "BC25427100",
             "nhiprice": "2.51",
@@ -2206,6 +2295,7 @@
         "products": {
             "name": "GLUCOMET",
             "chinesename": "撲菌特錠",
+            "producer": "",
             "dosage": "400MG",
             "nhidrugcode": "AC049191G0",
             "nhiprice": "2",
@@ -2228,6 +2318,7 @@
         "products": {
             "name": "LICODIN",
             "chinesename": "克醣美錠",
+            "producer": "",
             "dosage": "5/500MG",
             "nhidrugcode": "AC46733100",
             "nhiprice": "2.42",
@@ -2255,6 +2346,7 @@
         "products": {
             "name": "TOPAMAX",
             "chinesename": "利血達",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "AB31596100",
             "nhiprice": "4.24",
@@ -2282,6 +2374,7 @@
         "products": {
             "name": "NIFEDIPINE",
             "chinesename": "妥泰膜衣錠",
+            "producer": "",
             "dosage": "100MG",
             "nhidrugcode": "BC22508100",
             "nhiprice": "33.2",
@@ -2309,6 +2402,7 @@
         "products": {
             "name": "ACTOSMET",
             "chinesename": "恆脈循持續錠",
+            "producer": "",
             "dosage": "30MG",
             "nhidrugcode": "AC57219100",
             "nhiprice": "7.3",
@@ -2336,6 +2430,7 @@
         "products": {
             "name": "ALLOPURINOL",
             "chinesename": "愛妥蜜錠",
+            "producer": "",
             "dosage": "15/850MG",
             "nhidrugcode": "BC24839100",
             "nhiprice": "12.3",
@@ -2363,6 +2458,7 @@
         "products": {
             "name": "KERLONE",
             "chinesename": "安樂普利諾",
+            "producer": "",
             "dosage": "",
             "nhidrugcode": "AC142281G0",
             "nhiprice": "2",
@@ -2385,6 +2481,7 @@
         "products": {
             "name": "FYLIN",
             "chinesename": "可絡暢錠",
+            "producer": "",
             "dosage": "",
             "nhidrugcode": "BC21530100",
             "nhiprice": "4.24",
@@ -2407,6 +2504,7 @@
         "products": {
             "name": "ALLOPURINOL",
             "chinesename": "暢循持續錠",
+            "producer": "生達",
             "dosage": "400MG",
             "nhidrugcode": "AC41488100",
             "nhiprice": "2.07",

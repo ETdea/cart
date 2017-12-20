@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/Rx';
+import { Goods } from './goods';
 import {
   FormBuilder,
   FormGroup,
@@ -12,7 +15,8 @@ import {
 })
 export class GoodsComponent implements OnInit {
   isVisible = false;
-  goods = require('../goods.json');
+  goods: Goods[];
+  keyword: string;
   
   
   // validateForm: FormGroup;
@@ -29,6 +33,7 @@ export class GoodsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.goods = [];
     // this.formInit();
   }
 
@@ -56,4 +61,16 @@ export class GoodsComponent implements OnInit {
     console.log(id);
     this.showModal()
   }
+
+  search(){
+    GoodsService.search(this.keyword).subscribe(data => {
+      this.goods = data;
+    });
+  }
+}
+
+export class GoodsService{
+    static search(keyword): Observable<Goods[]>{
+      return Observable.of(require('../mock/goods.json'));
+    }
 }
