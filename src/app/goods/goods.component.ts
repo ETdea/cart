@@ -7,6 +7,8 @@ import {
   FormGroup,
   Validators
 } from '@angular/forms';
+import { fail } from 'assert';
+import { NzTableComponent } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-goods',
@@ -14,27 +16,40 @@ import {
   styleUrls: ['./goods.component.css']
 })
 export class GoodsComponent implements OnInit {
-  isVisible = false;
-  goods: Goods[];
-  keyword: string;
-  
-  
+  readonly addedTitleText = "建立上架商品";
+  readonly editedTitleText = "編輯上架商品";
+  readonly tableNo
+
+  tableData: Goods[] = [];
+  tableNoResult: string;
+  searchedInputValue: string;
+  modalTitle: string;
+
+  isTableLoading = false;
+  showTableLoading = () => this.isTableLoading = true;
+  hideTableLoading = () => this.isTableLoading = false;
+
+  isModalVisible = false;
+  showModal = () => this.isModalVisible = true;
+  hideModal = () => this.isModalVisible = false;
+
   // validateForm: FormGroup;
-  
+
   //   submitForm() {
   //     for (const i in this.validateForm.controls) {
   //       this.validateForm.controls[ i ].markAsDirty();
   //     }
   //   }
-  
+
   //   get isHorizontal() {
   //     return this.validateForm.controls[ 'formLayout' ] && this.validateForm.controls[ 'formLayout' ].value === 'horizontal';
   //   }
   constructor() { }
 
   ngOnInit() {
-    this.goods = [];
     // this.formInit();
+
+    this.tableInit();
   }
 
   // formInit(){
@@ -45,32 +60,46 @@ export class GoodsComponent implements OnInit {
   //   });
   // }
 
-  showModal = () => {
-    this.isVisible = true;
-  }
-
-  handleOk(e){
-    this.isVisible = false;
-  }
-
-  handleCancel(e){
-    this.isVisible = false;
-  }
-
-  edit(id){
-    console.log(id);
-    this.showModal()
-  }
-
-  search(){
-    GoodsService.search(this.keyword).subscribe(data => {
-      this.goods = data;
+  tableInit() {
+    this.showTableLoading();
+    GoodsService.getNew().subscribe(result => {
+      this.tableData = result;
+      this.hideTableLoading();
     });
+  }
+
+  searchedButtonClick() {
+    this.showTableLoading();
+    
+    GoodsService.search(this.searchedInputValue).subscribe(result => {
+      this.tableData = result;
+      this.hideTableLoading();
+    });
+  }
+
+  addedButtonClick() {
+    this.modalTitle = this.addedTitleText;
+
+    this.showModal();
+  }
+
+  tableRowClick(id) {
+    this.modalTitle = this.editedTitleText;
+
+    this.showModal();
+  }
+
+  hideAddedModal() {
+    this.hideModal();
   }
 }
 
-export class GoodsService{
-    static search(keyword): Observable<Goods[]>{
-      return Observable.of(require('../mock/goods.json'));
-    }
+export class GoodsService {
+  static search(keyword): Observable<Goods[]> {
+    return Observable.of(require('../mock/goods.json')).delay(1000);
+  }
+
+  static getNew(): Observable<Goods[]> {
+    return Observable.of(require('../mock/goods.json').slice(1,5)).delay(1000);
+  }
 }

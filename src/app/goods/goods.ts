@@ -6,7 +6,6 @@ export class Goods{
     endDate: string;
     products: Product[];
     units: Unit[];
-
 }
 
 export class Product{
@@ -14,8 +13,8 @@ export class Product{
     chineseName: string;
     producer: string;
     dosage: string;
-    nhidrugcode: string;
-    nhiprice: string;
+    nhiDrugCode: string;
+    nhiPrice: string;
     package: string;
 }
 
