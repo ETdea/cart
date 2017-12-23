@@ -36,13 +36,14 @@
     </tbody>
   </nz-table>
 </div>
-
+<p>{{ form.value | json}}</p>
+<p>{{ form.status | json}}</p>
 <nz-modal [nzVisible]="isModalVisible" [nzTitle]="modalTitle" [nzContent]="modalContent" (nzOnCancel)="hideModal()" (nzOnOk)="hideModal()">
   <ng-template #modalContent>
-    <form nz-form (ngSubmit)="submitForm()" novalidate>
+    <form nz-form [formGroup]="form" novalidate>
       <div nz-form-item nz-row>
-        <div nz-form-control nz-col>
-          <nz-input nzPlaceHolder="標題" required>
+        <div nz-form-control nz-col nzHasFeedback>
+          <nz-input formControlName="title" nzPlaceHolder="標題">
           </nz-input>
         </div>
 

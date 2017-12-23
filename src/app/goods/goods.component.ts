@@ -8,7 +8,6 @@ import {
   Validators
 } from '@angular/forms';
 import { fail } from 'assert';
-import { NzTableComponent } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-goods',
@@ -18,9 +17,9 @@ import { NzTableComponent } from 'ng-zorro-antd';
 export class GoodsComponent implements OnInit {
   readonly addedTitleText = "建立上架商品";
   readonly editedTitleText = "編輯上架商品";
-  readonly tableNo
 
   tableData: Goods[] = [];
+  form: FormGroup;
   tableNoResult: string;
   searchedInputValue: string;
   modalTitle: string;
@@ -44,12 +43,13 @@ export class GoodsComponent implements OnInit {
   //   get isHorizontal() {
   //     return this.validateForm.controls[ 'formLayout' ] && this.validateForm.controls[ 'formLayout' ].value === 'horizontal';
   //   }
-  constructor() { }
+  constructor(private formbuilder: FormBuilder) { }
 
   ngOnInit() {
     // this.formInit();
 
     this.tableInit();
+    this.formInit();
   }
 
   // formInit(){
@@ -65,6 +65,12 @@ export class GoodsComponent implements OnInit {
     GoodsService.getNew().subscribe(result => {
       this.tableData = result;
       this.hideTableLoading();
+    });
+  }
+
+  formInit(){
+    this.form = this.formbuilder.group({
+      title: ['test', Validators.required]
     });
   }
 
@@ -87,10 +93,6 @@ export class GoodsComponent implements OnInit {
     this.modalTitle = this.editedTitleText;
 
     this.showModal();
-  }
-
-  hideAddedModal() {
-    this.hideModal();
   }
 }
 
