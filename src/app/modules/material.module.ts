@@ -20,4 +20,4 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatFormFieldModule
   ]
 })
-export class AppMaterialModule { }
+export class MaterialModule { }
