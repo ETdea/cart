@@ -1,3 +1,38 @@
-<p>
-  goods works!
-</p>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-button mat-raised-button (click)="addedButtonClick()" color="accent">
+      新增
+    </button>
+
+    <button mat-button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+
+    <input matInput [(ngModel)]="searchedInputValue" (keyup.enter)="searchedButtonClick()" placeholder="搜尋" style="width:60%">
+
+    <mat-paginator #paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-spinner *ngIf="isSpinnerVisible"></mat-spinner>
+
+<mat-table #table [dataSource]="dataSource" matSort *ngIf="!isTableLoading">
+    <ng-container matColumnDef="title">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>title</mat-header-cell>
+      <mat-cell *matCellDef="let goods">
+        <p>{{ goods.title }}</p>
+        <span *ngFor="let unit of goods.units">【{{unit.subtractstockqty }} / {{ unit.title }} {{ unit.price | currency}}】</span>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="nhidrug">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>nhidrug</mat-header-cell>
+      <mat-cell *matCellDef="let goods">
+          <p>{{ goods.products.nhidrugcode }}</p>
+          <p>{{ goods.products.nhiprice | currency }}</p>
+      </mat-cell>
+    </ng-container>
+
+  <mat-header-row *matHeaderRowDef></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="tableRowClick(row.id)"></mat-row>
+</mat-table>
