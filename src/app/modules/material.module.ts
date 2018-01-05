@@ -13,6 +13,7 @@ import { MatSortModule } from '@angular/material';
 import { MatProgressSpinnerModule } from '@angular/material';
 import { MatDialogModule } from '@angular/material';
 import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import { MatCardModule } from '@angular/material';
 
 @NgModule({
   exports:[
@@ -30,7 +31,8 @@ import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
     MatProgressSpinnerModule,
     MatDialogModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatCardModule
   ]
 })
 export class MaterialModule { }

@@ -4,12 +4,14 @@ import { MaterialModule } from './modules/material.module';
 import { AppComponent } from './app.component';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GoodsComponent, GoodsDialog } from './goods/goods';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GoodsComponent,
-    GoodsDialog
+    GoodsDialog,
+    CartComponent
   ],
   imports: [
     BrowserModule,

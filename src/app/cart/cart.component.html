@@ -1,0 +1,30 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+
+    <input matInput [(ngModel)]="searchedInputValue" (keyup.enter)="searchedButtonClick()" placeholder="搜尋" style="width:60%">
+ </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-spinner *ngIf="isSpinnerVisible"></mat-spinner>
+
+<mat-card>
+  <mat-card-content>
+    <mat-form-field>
+      <input matInput placeholder="標題" tabindex="1">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="標題" tabindex="1" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="標題" tabindex="1" >
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  test1
+</mat-card>
