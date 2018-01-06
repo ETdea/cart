@@ -5,26 +5,25 @@
     </button>
 
     <input matInput [(ngModel)]="searchedInputValue" (keyup.enter)="searchedButtonClick()" placeholder="搜尋" style="width:60%">
- </mat-toolbar-row>
+  </mat-toolbar-row>
 </mat-toolbar>
 
 <mat-spinner *ngIf="isSpinnerVisible"></mat-spinner>
 
-<mat-card>
-  <mat-card-content>
-    <mat-form-field>
-      <input matInput placeholder="標題" tabindex="1">
-    </mat-form-field>
+<!-- <form [formGroup]="form"> -->
+<mat-list *ngFor="let goods of list">
+  <mat-list-item>
+    <h1 mat-line>{{ goods.title }}</h1>
+    <h6 mat-line>{{ goods.products.nhiDrugCode}} | {{ goods.products.nhiPrice | currency}}</h6>
 
-    <mat-form-field>
-      <input matInput placeholder="標題" tabindex="1" >
-    </mat-form-field>
+    <div *ngFor="let unit of goods.units">
+      <mat-form-field>
+        <input matInput placeholder="{{unit.title}}" type="number">
+        <mat-hint>{{ unit.subtractStockQty }} / {{ unit.title }} {{ unit.price | currency}}</mat-hint>
+      </mat-form-field>
+    </div>
 
-    <mat-form-field>
-      <input matInput placeholder="標題" tabindex="1" >
-    </mat-form-field>
-  </mat-card-content>
-</mat-card>
-<mat-card>
-  test1
-</mat-card>
+    <span style="width:150px">小計：1400</span>
+  </mat-list-item>
+</mat-list>
+<!-- </form> -->

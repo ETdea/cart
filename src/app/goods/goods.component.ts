@@ -46,7 +46,7 @@ export class GoodsComponent implements OnInit {
     });
   }
 
-  addedButtonClick():void {
+  addedButtonClick(): void {
     this.openDialog();
     this.dialog.afterClosed().subscribe(dialogData => {
       GoodsService.post(dialogData).subscribe(result => {
@@ -75,6 +75,10 @@ export class GoodsService {
     return this.getAll().map(m => m.slice(6, 10));
   }
 
+  static getTitles(keyword): Observable<SearchedResult[]> {
+    return this.getAll().map(m => m.map(t => new SearchedResult()));
+  }
+
   static getNew(): Observable<Goods[]> {
     return this.getAll().map(m => m.slice(0, 50));
   }
@@ -92,3 +96,7 @@ export class GoodsService {
   }
 }
 
+export class SearchedResult {
+  id: string;
+  title: string;
+}
