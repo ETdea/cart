@@ -3,8 +3,12 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from './modules/material.module';
 import { AppComponent } from './app.component';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { GoodsComponent, GoodsDialog } from './goods/goods';
+import { GoodsComponent } from './goods/goods.component';
+import { GoodsDialog } from './goods/goods.dialog';
 import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GoodsService } from './service/goods.service';
+import { OrderService } from './service/order.service';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,13 @@ import { CartComponent } from './cart/cart.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     MaterialModule
   ],
   entryComponents:[
     GoodsDialog
   ],
-  providers: [FormBuilder],
+  providers: [FormBuilder, GoodsService, OrderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

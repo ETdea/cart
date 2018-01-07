@@ -1,9 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatTableDataSource, MatPaginator, MatDialog, MatDialogRef } from '@angular/material';
-import { Goods, GoodsDialog, GoodsService } from '../goods/goods';
+import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
+import { MatAutocomplete } from '@angular/material';
+import { HttpClient } from '@angular/common/http';
+
+import { Goods, Candidate } from '../service/model/goods';
+import { GoodsService } from '../service/goods.service';
+import { OrderService } from '../service/order.service';
 
 @Component({
   selector: 'app-cart',
@@ -11,56 +15,122 @@ import { Goods, GoodsDialog, GoodsService } from '../goods/goods';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  constructor(private formbuilder: FormBuilder) { }
+  @ViewChild(MatAutocomplete) autocomplete: MatAutocomplete;
+
+  constructor(private formBuilder: FormBuilder, private goodsService: GoodsService, private orderService: OrderService) { }
+
   searchedInputValue: string;
-  autocompleteList: SearchedResult[];
-  
-  
-  
-  list: Goods[];
+  searchedInputOldValue: string;
+  autocompleteOptions: Observable<Candidate[]>;
 
-  // isSpinnerVisible = false;
-  // displayedColumns = ['title', 'nhidrug'];
+  goodsFormArray = this.formBuilder.array([]);
+  subtotals: number[] = [];
+  total = 0;
 
-  // dataSource = new MatTableDataSource<Goods>();
+  generateFormGroup = () => this.formBuilder.group({
+    goods: this.goodsFormArray
+  });
+  generateGoodsFormArrayGroup = (goods: Goods) => this.formBuilder.group({
+    id: [goods.id],
+    units: this.generateUnitFormArray(goods)
+  });
+  generateUnitFormArrayGroup = (title: string, price: number) => this.formBuilder.group({
+    title: [title],
+    quantity: [0],
+    price: [price]
+  });
+  generateUnitFormArray(goods: Goods) {
+    let unitArray = this.formBuilder.array([]);
+    goods.units.forEach(unit => unitArray.push(this.generateUnitFormArrayGroup(unit.title, unit.price)));
+
+    return unitArray;
+  }
+
+  form = this.generateFormGroup();
+  list: Goods[] = [];
+
+  isGoodsExist = (goods: Goods) => this.list.some(value => value.id === goods.id);
+  isKeyInChar = () => this.searchedInputValue !== this.searchedInputOldValue;
 
   ngOnInit() {
-    
+    this.autocompleteInit();
   }
 
-  // updateTable(data: Goods[]): this { this.dataSource.data = data; return this; }
+  autocompleteInit(): this {
+    this.autocomplete.optionSelected.asObservable().subscribe(() => this.autocompleteSelect()); return this;
+  }
 
-  // tableInit() {
-  //   CartService.getNew().subscribe(result => { this.updateTable(result) });
-  //   return this;
-  // }
+  resetSearchedInput(): this {
+    this.searchedInputValue = "";
 
-  searchedButtonClick(): void {
-    GoodsService.search(this.searchedInputValue).subscribe(result => {
-      this.list = result;
+    return this;
+  }
+
+  addList(goods: Goods): this {
+    this.list.splice(0, 0, goods);
+
+    return this;
+  }
+
+  addGoodsFormArray(goods: Goods): this {
+    this.goodsFormArray.insert(0, this.generateGoodsFormArrayGroup(goods));
+
+    return this;
+  }
+
+  addSubtotal(): this {
+    this.subtotals.splice(0, 0, 0);
+    return this;
+  }
+
+  setAutocompleteOptions(): this {
+    this.autocompleteOptions = this.goodsService.getCandidates(this.searchedInputValue);
+
+    return this;
+  }
+
+  setSearchedInputOldValue(): this {
+    this.searchedInputOldValue = this.searchedInputValue;
+
+    return this;
+  }
+
+  setSubtotal(index:number): this {
+    this.subtotals[index] = this.countSubtotal(index);
+    return this;
+  }
+
+  setTotal(): this {
+    this.total = this.countTotal();
+
+    return this;
+  }
+
+  countSubtotal(index: number) {
+    return this.form.value.goods[index].units.reduce((total, unit) => { return (unit.quantity * unit.price) + total }, 0);
+  }
+
+  countTotal(): number {
+    return this.subtotals.reduce((total, subtotal) => subtotal + total);
+  }
+
+  autocompleteSelect(): void {
+    this.goodsService.find(this.searchedInputValue).subscribe(goods => {
+      this.resetSearchedInput();
+
+      if (!this.isGoodsExist(goods)) this.addList(goods).addGoodsFormArray(goods).addSubtotal();
     });
   }
-}
 
+  searchedInputKeyup(): void {
+    if (this.isKeyInChar()) this.setAutocompleteOptions().setSearchedInputOldValue();
+  }
 
-export class SearchedResult{
-  id: string;
-  title: string;
-}
+  quantityInputValueChange(goodsIndex: number): void {
+    this.setSubtotal(goodsIndex).setTotal();
+  }
 
-export class Order{
-  total:number;
-  goods: CartGoods[]
-}
-
-export class CartGoods{
-  goodsId: string;
-  units: CartGoodsUnit[];
-  total: number;
-}
-
-export class CartGoodsUnit{
-  title: string;
-  quantity: number;
-  price: number;
+  submitButtonClick(): void {
+    this.orderService.post(this.form.value);
+  }
 }
