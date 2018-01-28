@@ -5,7 +5,8 @@ import { Observable } from 'rxjs/Observable';
 import { Goods, Candidate } from './model/goods';
 import { retry } from 'rxjs/operators/retry';
 
-const url = "/assets/mocks/goods.json";
+const mockUrl = "/assets/mocks/goods.json";
+const url = "http://tpeyichangapi.azurewebsites.net/goods/";
 
 @Injectable()
 export class GoodsService {
@@ -19,7 +20,9 @@ export class GoodsService {
   }
 
   find(id: string): Observable<Goods>{
-    return this.get().map(array => array.find(goods => goods.id === id));
+    let result = this.httpClient.get<Goods>(url + id);
+
+    return result;
   }
 
   search(keyword: string): Observable<Goods[]>{

@@ -20,10 +20,10 @@ export class GoodsDialog implements OnInit {
   generateFormGroup = () => this.formBuilder.group({
     id: [""],
     title: [""],
-    desciption: [""],
+    description: [""],
     startDate: [""],
     endDate: [""],
-    products: this.formBuilder.group({
+    product: this.formBuilder.group({
       name: ["", Validators.required],
       chineseName: ["", Validators.required],
       producer: [""],

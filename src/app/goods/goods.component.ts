@@ -4,6 +4,8 @@ import { MatTableDataSource, MatPaginator, MatDialog, MatDialogRef } from '@angu
 import { GoodsDialog } from './goods';
 import { GoodsService } from '../service/goods.service';
 import { Goods } from '../service/model/goods';
+import { retry } from 'rxjs/operator/retry';
+import { resetFakeAsyncZone } from '@angular/core/testing';
 
 @Component({
   selector: 'app-goods',
@@ -58,7 +60,7 @@ export class GoodsComponent implements OnInit {
   tableRowClick(id): void {
     this.goodsService.find(id).subscribe(result => {
       this.openDialog(result);
-
+console.log(result);
       this.dialog.afterClosed().subscribe(result => {
         this.goodsService.put(result).subscribe(ok => {
         })

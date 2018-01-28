@@ -28,8 +28,8 @@
     <ng-container matColumnDef="nhidrug">
       <mat-header-cell *matHeaderCellDef mat-sort-header>nhidrug</mat-header-cell>
       <mat-cell *matCellDef="let goods">
-          <p>{{ goods.products.nhiDrugCode }}</p>
-          <p>{{ goods.products.nhiPrice | currency:'':'symbol':'.0-3' }}</p>
+          <p>{{ goods.product.nhiDrugCode }}</p>
+          <p>{{ goods.product.nhiPrice | currency:'':'symbol':'.0-3' }}</p>
       </mat-cell>
     </ng-container>
 

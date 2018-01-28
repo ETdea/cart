@@ -1,10 +1,10 @@
 export class Goods {
   id = "";
   title = "";
-  desciption = "";
+  description = "";
   startDate = "";
   endDate = "";
-  products = new Product();
+  product = new Product();
   units = [new Unit()];
 }
 

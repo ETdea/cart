@@ -6,6 +6,11 @@ export class Goods {
   endDate = "";
   products = new Product();
   units = [new Unit()];
+
+  create(data): Goods{
+    data.units = JSON.parse(data.product.units);
+    return data as Goods;
+  }
 }
 
 export class Product {
