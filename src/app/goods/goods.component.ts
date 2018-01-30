@@ -17,6 +17,7 @@ export class GoodsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   
   readonly displayedColumns = ['title', 'nhidrug'];
+  isTableLoading = false;
 
   dialog: MatDialogRef<GoodsDialog>;
   searchedInputValue: string;

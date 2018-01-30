@@ -22,6 +22,7 @@ export class CartComponent implements OnInit {
   searchedInputValue: string;
   searchedInputOldValue: string;
   autocompleteOptions: Observable<Candidate[]>;
+  isSpinnerVisible = false;
 
   goodsFormArray = this.formBuilder.array([]);
   subtotals: number[] = [];
