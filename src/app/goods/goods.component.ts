@@ -60,9 +60,13 @@ export class GoodsComponent implements OnInit {
   tableRowClick(id): void {
     this.goodsService.find(id).subscribe(result => {
       this.openDialog(result);
-console.log(result);
+
       this.dialog.afterClosed().subscribe(result => {
+        
+        if (result == null) return;
+        
         this.goodsService.put(result).subscribe(ok => {
+          this.searchedButtonClick();
         })
       })
     });

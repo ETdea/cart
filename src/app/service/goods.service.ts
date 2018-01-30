@@ -34,7 +34,9 @@ export class GoodsService {
   }
 
   put(data: Goods): Observable<Goods>{
-    return this.find("12");
+    let result = this.httpClient.put<Goods>(url + data.id, data);
+
+    return result;
   }
 
   getCandidates(keyword: string): Observable<Candidate[]> {
