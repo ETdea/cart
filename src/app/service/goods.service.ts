@@ -6,7 +6,7 @@ import { Goods, Candidate } from './model/goods';
 import { retry } from 'rxjs/operators/retry';
 
 const mockUrl = "/assets/mocks/goods.json";
-const url = "http://tpeyichangapi.azurewebsites.net/goods/";
+const url = "https://tpeyichangapi.azurewebsites.net/goods/";
 
 @Injectable()
 export class GoodsService {
