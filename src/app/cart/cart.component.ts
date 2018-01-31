@@ -29,10 +29,11 @@ export class CartComponent implements OnInit {
   total = 0;
 
   generateFormGroup = () => this.formBuilder.group({
-    goods: this.goodsFormArray
+    details: this.goodsFormArray
   });
   generateGoodsFormArrayGroup = (goods: Goods) => this.formBuilder.group({
     id: [goods.id],
+    title: [goods.title],
     units: this.generateUnitFormArray(goods)
   });
   generateUnitFormArrayGroup = (title: string, price: number) => this.formBuilder.group({
@@ -108,7 +109,7 @@ export class CartComponent implements OnInit {
   }
 
   countSubtotal(index: number) {
-    return this.form.value.goods[index].units.reduce((total, unit) => { return (unit.quantity * unit.price) + total }, 0);
+    return this.form.value.details[index].units.reduce((total, unit) => { return (unit.quantity * unit.price) + total }, 0);
   }
 
   countTotal(): number {
@@ -116,15 +117,15 @@ export class CartComponent implements OnInit {
   }
 
   autocompleteSelect(): void {
-    this.goodsService.find(this.searchedInputValue).subscribe(goods => {
-      this.resetSearchedInput();
-
+    let id = this.searchedInputValue;
+    this.resetSearchedInput();
+    this.goodsService.find(id).subscribe(goods => {
       if (!this.isGoodsExist(goods)) this.addList(goods).addGoodsFormArray(goods).addSubtotal();
     });
   }
 
   searchedInputKeyup(): void {
-    if (this.isKeyInChar()) this.setAutocompleteOptions().setSearchedInputOldValue();
+    if (this.isKeyInChar() && this.searchedInputValue != "") this.setAutocompleteOptions().setSearchedInputOldValue();
   }
 
   quantityInputValueChange(goodsIndex: number): void {
@@ -132,6 +133,7 @@ export class CartComponent implements OnInit {
   }
 
   submitButtonClick(): void {
-    this.orderService.post(this.form.value);
+    console.log(this.form.value);
+    this.orderService.post(this.form.value).subscribe();
   }
 }

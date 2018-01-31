@@ -25,7 +25,7 @@
 <mat-spinner *ngIf="isSpinnerVisible"></mat-spinner>
 
 <form [formGroup]="form">
-  <div formArrayName="goods">
+  <div formArrayName="details">
     <mat-card *ngFor="let goods of list; index as index" [formGroupName]="index">
       <!-- <mat-card-header>
         <mat-card-title>{{ goods.title }}</mat-card-title>
@@ -33,7 +33,7 @@
       </mat-card-header> -->
       <mat-card-content formArrayName="units">
         <h3 mat-line>{{ goods.title }}</h3>
-        <h4 mat-line>{{ goods.products.nhiDrugCode}} | {{ goods.products.nhiPrice | currency}}</h4>
+        <h4 mat-line>{{ goods.product.nhiDrugCode}} | {{ goods.product.nhiPrice | currency}}</h4>
 
         <div>
           <mat-form-field floatLabel="never" *ngFor="let unit of goods.units; index as i" [formGroupName]="i" style="width:100px;margin-left:50px">

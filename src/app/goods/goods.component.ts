@@ -54,6 +54,7 @@ export class GoodsComponent implements OnInit {
     this.openDialog();
     this.dialog.afterClosed().subscribe(dialogData => {
       this.goodsService.post(dialogData).subscribe(result => {
+        this.searchedButtonClick();
       });
     });
   }

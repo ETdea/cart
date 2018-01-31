@@ -4,9 +4,12 @@ import { Observable } from 'rxjs/Observable';
 
 import { Goods, Candidate } from './model/goods';
 import { retry } from 'rxjs/operators/retry';
+import { HttpParams } from '@angular/common/http/src/params';
+import { keyframes } from '@angular/animations/src/animation_metadata';
 
 const mockUrl = "/assets/mocks/goods.json";
-const url = "https://tpeyichangapi.azurewebsites.net/goods/";
+// const url = "https://tpeyichangapi.azurewebsites.net/goods/";
+const url = "http://localhost:55556/goods/";
 
 @Injectable()
 export class GoodsService {
@@ -26,11 +29,12 @@ export class GoodsService {
   }
 
   search(keyword: string): Observable<Goods[]>{
-    return this.get().map(array => array.filter(goods => goods.title.includes(keyword)));
+    return this.httpClient.get<Goods[]>(url + "?keyword=" + keyword);
   }
 
   post(data: Goods): Observable<Goods>{
-    return this.find("12");
+    let result = this.httpClient.post<Goods>(url, data);
+    return result;
   }
 
   put(data: Goods): Observable<Goods>{
@@ -40,12 +44,7 @@ export class GoodsService {
   }
 
   getCandidates(keyword: string): Observable<Candidate[]> {
-    keyword = keyword == "" ? "@#$@$@#$" : keyword;
-
-    let result = this.get().map(array =>
-                          array.map(goods =>
-                            new Candidate(goods.id, goods.title)).filter(candidate =>
-                              candidate.title.includes(keyword)));
+    let result = this.httpClient.get<Goods[]>(url + "candidates/" + keyword );
 
     return result;
   }
