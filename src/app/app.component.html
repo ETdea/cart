@@ -1,19 +1,21 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <button mat-button mat-icon-button>
+    <button mat-button mat-icon-button (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    
-    <button mat-button>
-      Logo
-    </button>
 
-    <button mat-button mat-icon-button>
-      <mat-icon>search</mat-icon>
-    </button>
-    <mat-form-field floatLabel="never">
-      <input matInput placeholder="搜尋">
-    </mat-form-field>
+    <div style="padding-left: 2vw;min-width: 12vw;">
+      <h1>益全生技藥品</h1>
+    </div>
+<div>
+    <button mat-icon-button disableRipple="true">
+        <mat-icon>search</mat-icon>
+      </button>
+  
+    <input matInput  placeholder="搜尋" style="width: 47vw;">
+</div>
+   
+  
 
     <span style="flex: auto;"></span>
 
@@ -24,11 +26,17 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened="true">
+  <mat-sidenav #drawer mode="side" opened="true">
     <mat-nav-list>
-      <mat-list-item><a routerLink="goods">上架商品</a></mat-list-item>
-      <mat-list-item><a routerLink="cart">購物車</a></mat-list-item>
-      <mat-list-item><a routerLink="order">訂單</a></mat-list-item>
+      <mat-list-item>
+        <a routerLink="goods">上架商品</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a routerLink="cart">購物車</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a routerLink="order">訂單</a>
+      </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
 
