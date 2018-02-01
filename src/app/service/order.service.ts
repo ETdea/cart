@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
-// const url = "https://tpeyichangapi.azurewebsites.net/goods/";
-const url = "http://localhost:55556/orders/";
+const url = "https://tpeyichangapi.azurewebsites.net/Orders/";
+// const url = "http://localhost:5000/Orders/";
 
 @Injectable()
 export class OrderService {

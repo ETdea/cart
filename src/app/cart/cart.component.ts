@@ -133,7 +133,6 @@ export class CartComponent implements OnInit {
   }
 
   submitButtonClick(): void {
-    console.log(this.form.value);
-    this.orderService.post(this.form.value).subscribe();
+    this.orderService.post(this.form.value).subscribe(result => {});
   }
 }
