@@ -3,7 +3,7 @@
 <div nat-dailog-content>
   <form [formGroup]="form" novalidate>
     <mat-form-field>
-      <input matInput placeholder="標題" tabindex="1" formControlName="title" cdkFocusInitial>
+      <input matInput placeholder="標題" formControlName="title">
     </mat-form-field>
 
     <!-- <mat-form-field>
@@ -71,6 +71,6 @@
 </div>
 
 <div mat-dialog-actions>
-  <button mat-raised-button (click)="cancelButtonClick()" >取消</button>
+  <button mat-raised-button (click)="cancelButtonClick()">取消</button>
   <button mat-raised-button color="primary" [mat-dialog-close]="outputData" [disabled]="form.invalid">儲存</button>
 </div>

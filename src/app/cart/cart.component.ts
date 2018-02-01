@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 import { Goods, Candidate } from '../service/model/goods';
 import { GoodsService } from '../service/goods.service';
 import { OrderService } from '../service/order.service';
+import { LayoutService } from '../service/layout.service';
 
 @Component({
   selector: 'app-cart',
@@ -17,8 +18,8 @@ import { OrderService } from '../service/order.service';
 export class CartComponent implements OnInit {
   @ViewChild(MatAutocomplete) autocomplete: MatAutocomplete;
 
-  constructor(private formBuilder: FormBuilder, private goodsService: GoodsService, private orderService: OrderService) { }
-
+  constructor(private layout: LayoutService, private formBuilder: FormBuilder, private goodsService: GoodsService, private orderService: OrderService) { }
+  
   searchedInputValue: string;
   searchedInputOldValue: string;
   autocompleteOptions: Observable<Candidate[]>;

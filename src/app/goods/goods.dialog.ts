@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-
 import { Goods } from './goods';
 
 @Component({
@@ -9,6 +8,7 @@ import { Goods } from './goods';
   styleUrls: ['./goods.dialog.css']
 })
 export class GoodsDialog implements OnInit {
+
   constructor(
     private formBuilder: FormBuilder,
     private dialogRef: MatDialogRef<GoodsDialog>,

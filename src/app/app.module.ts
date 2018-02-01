@@ -9,7 +9,9 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GoodsService } from './service/goods.service';
 import { OrderService } from './service/order.service';
+import { LayoutService } from './service/layout.service';
 import { AppRoutingModule } from './app-routing.module';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,13 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    LayoutModule
   ],
   entryComponents:[
     GoodsDialog
   ],
-  providers: [FormBuilder, GoodsService, OrderService],
+  providers: [FormBuilder,  GoodsService, OrderService, LayoutService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

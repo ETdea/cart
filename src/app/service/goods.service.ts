@@ -8,8 +8,9 @@ import { HttpParams } from '@angular/common/http/src/params';
 import { keyframes } from '@angular/animations/src/animation_metadata';
 
 const mockUrl = "/assets/mocks/goods.json";
-const url = "https://tpeyichangapi.azurewebsites.net/goods/";
+// const url = "https://tpeyichangapi.azurewebsites.net/goods/";
 // const url = "http://localhost:5000/goods/";
+const url = "/api/goods/";
 
 @Injectable()
 export class GoodsService {
