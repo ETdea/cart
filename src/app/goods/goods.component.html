@@ -17,22 +17,93 @@
 <mat-spinner *ngIf="isSpinnerVisible"></mat-spinner>
 
 <mat-table #table [dataSource]="dataSource" matSort *ngIf="!isTableLoading">
-    <ng-container matColumnDef="title">
-      <mat-header-cell *matHeaderCellDef mat-sort-header>title</mat-header-cell>
-      <mat-cell *matCellDef="let goods">
-        <p>{{ goods.title }}</p>
-        <span *ngFor="let unit of goods.units">【{{unit.subtractStockQty }} / {{ unit.title }} {{ unit.price | currency:'':'symbol':'.0-3' }}】</span>
-      </mat-cell>
-    </ng-container>
+  <ng-container matColumnDef="title">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>title</mat-header-cell>
+    <mat-cell *matCellDef="let goods">
+      <p>{{ goods.title }}</p>
+      <span *ngFor="let unit of goods.units">【{{unit.subtractStockQty }} / {{ unit.title }} {{ unit.price | currency:'':'symbol':'.0-3' }}】</span>
+    </mat-cell>
+  </ng-container>
 
-    <ng-container matColumnDef="nhidrug">
-      <mat-header-cell *matHeaderCellDef mat-sort-header>nhidrug</mat-header-cell>
-      <mat-cell *matCellDef="let goods">
-          <p>{{ goods.product.nhiDrugCode }}</p>
-          <p>{{ goods.product.nhiPrice | currency:'':'symbol':'.0-3' }}</p>
-      </mat-cell>
-    </ng-container>
+  <ng-container matColumnDef="nhidrug">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>nhidrug</mat-header-cell>
+    <mat-cell *matCellDef="let goods">
+      <p>{{ goods.product.nhiDrugCode }}</p>
+      <p>{{ goods.product.nhiPrice | currency:'':'symbol':'.0-3' }}</p>
+    </mat-cell>
+  </ng-container>
 
   <mat-header-row *matHeaderRowDef></mat-header-row>
   <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="tableRowClick(row.id)"></mat-row>
 </mat-table>
+
+<div>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+  <p>testestest</p>
+</div>
