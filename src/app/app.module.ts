@@ -9,16 +9,19 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GoodsService } from './service/goods.service';
 import { OrderService } from './service/order.service';
+import { MessageService } from './service/messages.service';
 import { LayoutService } from './service/layout.service';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GoodsComponent,
     GoodsDialog,
-    CartComponent
+    CartComponent,
+    MessagesComponent
   ],
   imports: [
     AppRoutingModule,
@@ -32,7 +35,7 @@ import { LayoutModule } from '@angular/cdk/layout';
   entryComponents:[
     GoodsDialog
   ],
-  providers: [FormBuilder,  GoodsService, OrderService, LayoutService],
+  providers: [FormBuilder,  GoodsService, OrderService, LayoutService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

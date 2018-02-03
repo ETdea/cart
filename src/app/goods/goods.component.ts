@@ -6,6 +6,7 @@ import { GoodsService } from '../service/goods.service';
 import { Goods } from '../service/model/goods';
 import { retry } from 'rxjs/operator/retry';
 import { resetFakeAsyncZone } from '@angular/core/testing';
+import { concat } from 'rxjs/observable/concat';
 
 @Component({
   selector: 'app-goods',
@@ -37,7 +38,12 @@ export class GoodsComponent implements OnInit {
   tableInit() {
     this.dataSource.paginator = this.paginator;
     this.showSpinner();
-    this.goodsService.get().subscribe(result => { this.updateTable(result).hideSpinner() });
+    // this.goodsService.get().subscribe(result => { this.updateTable(result).hideSpinner() });
+    this.goodsService.get().subscribe(result => { 
+      // this.updateTable(result).hideSpinner()
+      console.log(result);
+    });
+
     return this;
   }
 

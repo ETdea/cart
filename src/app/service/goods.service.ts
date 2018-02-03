@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse,  } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
 import { Goods, Candidate } from './model/goods';
 import { retry } from 'rxjs/operators/retry';
 import { HttpParams } from '@angular/common/http/src/params';
 import { keyframes } from '@angular/animations/src/animation_metadata';
+import { catchError, map } from 'rxjs/operators';
 
 const mockUrl = "/assets/mocks/goods.json";
 // const url = "https://tpeyichangapi.azurewebsites.net/goods/";
@@ -17,9 +18,19 @@ export class GoodsService {
 
   constructor(private httpClient: HttpClient) { }
 
-  get(): Observable<Goods[]> {
-    let result = this.httpClient.get<Goods[]>(url);
+  // get(): Observable<Goods[]> {
+  //   let result = this.httpClient.get<Goods[]>(url);
 
+  //   return result;
+  // }
+  get(): Observable<HttpResponse<Goods[]>> {
+    let result = this.httpClient
+    .get<any>(mockUrl, { observe: 'response' })
+    .pipe(
+      map(data => data.body)
+    )
+    ;
+    
     return result;
   }
 
