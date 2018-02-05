@@ -14,6 +14,7 @@ import { LayoutService } from './service/layout.service';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MessagesComponent } from './messages/messages.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MessagesComponent } from './messages/messages.component';
     GoodsComponent,
     GoodsDialog,
     CartComponent,
-    MessagesComponent
+    MessagesComponent,
+    OrderComponent
   ],
   imports: [
     AppRoutingModule,

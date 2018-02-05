@@ -1,30 +1,19 @@
 export class Order {
-  id = "";
-  title = "";
-  description = "";
-  startDate = "";
-  endDate = "";
-  product = new Product();
-  units = [new Unit()];
+  id: string;
+  total: number;
+  date: Date;
+  details = [new Detail()];
 }
 
-export class Product {
-  name = "";
-  chineseName = "";
-  producer = "";
-  dosage = "";
-  nhiDrugCode = "";
-  nhiPrice: number;
-  package = "";
+export class Detail{
+  id: string;
+  title: string;
+  units = [new Unit()]
 }
 
-export class Unit {
-  title= "";
-  subtractStockQty: number;
+export class Unit{
+  title: string;
+  quantity: number ;
   price: number;
 }
 
-export class Candidate {
-  constructor(public id: string, public title:string){
-  }
-}
