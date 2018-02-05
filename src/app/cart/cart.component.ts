@@ -9,6 +9,8 @@ import { Goods, Candidate } from '../service/model/goods';
 import { GoodsService } from '../service/goods.service';
 import { OrderService } from '../service/order.service';
 import { LayoutService } from '../service/layout.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-cart',
@@ -18,7 +20,7 @@ import { LayoutService } from '../service/layout.service';
 export class CartComponent implements OnInit {
   @ViewChild(MatAutocomplete) autocomplete: MatAutocomplete;
 
-  constructor(private layout: LayoutService, private formBuilder: FormBuilder, private goodsService: GoodsService, private orderService: OrderService) { }
+  constructor(private router: Router, private layout: LayoutService, private formBuilder: FormBuilder, private goodsService: GoodsService, private orderService: OrderService) { }
   
   searchedInputValue: string;
   searchedInputOldValue: string;
@@ -135,5 +137,6 @@ export class CartComponent implements OnInit {
 
   submitButtonClick(): void {
     this.orderService.post(this.form.value).subscribe(result => {});
+    this.router.navigateByUrl("goods");
   }
 }

@@ -1,6 +1,6 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <button mat-button mat-icon-button>
+    <button mat-icon-button>
       <mat-icon>search</mat-icon>
     </button>
 
@@ -16,7 +16,7 @@
     <div style="padding-left: 2vw;min-width: 12vw;">
       總計: {{ total | currency:'':'symbol':'.0-3' }}
     </div>
-    <button mat-button mat-raised-button (click)="submitButtonClick()" color="accent">
+    <button *ngIf="total > 0" mat-raised-button (click)="submitButtonClick()" color="accent">
       送出訂單
     </button>
 
@@ -31,12 +31,23 @@
     <mat-card *ngFor="let goods of list; index as index" [formGroupName]="index">
       <!-- <mat-card-header>
         <mat-card-title>{{ goods.title }}</mat-card-title>
-        <mat-card-subtitle>{{ goods.products.nhiDrugCode}} | {{ goods.products.nhiPrice | currency}}</mat-card-subtitle>
+        <mat-card-subtitle>{{ goods.product.nhiDrugCode}} | {{ goods.product.nhiPrice | currency}}</mat-card-subtitle>
+        <div>
+            <mat-form-field floatLabel="never" *ngFor="let unit of goods.units; index as i" [formGroupName]="i" style="width:100px;margin-left:50px">
+              <input min="0" matInput type="number" formControlName="quantity" (change)="quantityInputValueChange(index)">
+              <span matSuffix>{{ unit.title }} / {{ unit.price | currency:'':'symbol':'.0-3' }}</span>
+              <mat-hint>{{ unit.subtractStockQty }} / {{ unit.title }} {{ unit.price | currency}}</mat-hint>
+            </mat-form-field>
+          </div>
       </mat-card-header> -->
       <mat-card-content formArrayName="units">
-        <h3 mat-line>{{ goods.title }}</h3>
-        <h4 mat-line>{{ goods.product.nhiDrugCode}} | {{ goods.product.nhiPrice | currency}}</h4>
-
+        <div style="width:25vw">
+          <h3 mat-line>{{ goods.title }}</h3>
+          <h4 mat-line>{{ goods.product.nhiDrugCode}} | {{ goods.product.nhiPrice | currency}}</h4>
+        </div>
+        <div style=" display: inline-flex; align-items:center">
+            小計: {{ subtotals[index] | currency:'':'symbol':'.0-3'}}
+        </div>
         <div>
           <mat-form-field floatLabel="never" *ngFor="let unit of goods.units; index as i" [formGroupName]="i" style="width:100px;margin-left:50px">
             <input min="0" matInput type="number" formControlName="quantity" (change)="quantityInputValueChange(index)">
@@ -44,7 +55,6 @@
             <mat-hint>{{ unit.subtractStockQty }} / {{ unit.title }} {{ unit.price | currency}}</mat-hint>
           </mat-form-field>
         </div>
-        <span>小計: {{ subtotals[index] | currency:'':'symbol':'.0-3'}}</span>
       </mat-card-content>
     </mat-card>
   </div>

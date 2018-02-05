@@ -5,7 +5,7 @@ import { GoodsComponent } from './goods/goods.component';
 import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'goods', pathMatch: 'full' },
+  { path: '', redirectTo: 'cart', pathMatch: 'full' },
   { path: 'goods', component: GoodsComponent },
   { path: 'cart', component: CartComponent }
 ];

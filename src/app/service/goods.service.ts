@@ -9,10 +9,10 @@ import { catchError, map } from 'rxjs/operators';
 import { ApiModel } from './model/apiModel'
 
 // const mockUrl = "/assets/mocks/goods.json";
-const url = "https://tpeyichangapi.azurewebsites.net/api/goods/";
+// const url = "https://tpeyichangapi.azurewebsites.net/api/goods/";
 // const url = "http://localhost:5000/goods/";
-// const url = "/api/goods/";
-HttpParams["test"] = function(){};
+const url = "/api/goods/";
+
 @Injectable()
 export class GoodsService {
   constructor(private httpClient: HttpClient) { }

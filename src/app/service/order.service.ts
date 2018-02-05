@@ -11,8 +11,5 @@ export class OrderService {
 
   constructor(private httpClient: HttpClient) { }
 
-  post(data): Observable<any>{
-    let result = this.httpClient.post<any>(url, data);
-    return result;
-  }
+  post(data): Observable<any> { return this.httpClient.post<any>(url, data);}
 }
