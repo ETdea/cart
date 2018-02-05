@@ -1,63 +1,31 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpResponse,  } from '@angular/common/http';
+import { HttpClient, HttpResponse, HttpParams  } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
 import { Goods, Candidate } from './model/goods';
 import { retry } from 'rxjs/operators/retry';
-import { HttpParams } from '@angular/common/http/src/params';
 import { keyframes } from '@angular/animations/src/animation_metadata';
 import { catchError, map } from 'rxjs/operators';
+import { ApiModel } from './model/apiModel'
 
-const mockUrl = "/assets/mocks/goods.json";
-// const url = "https://tpeyichangapi.azurewebsites.net/goods/";
+// const mockUrl = "/assets/mocks/goods.json";
+const url = "https://tpeyichangapi.azurewebsites.net/api/goods/";
 // const url = "http://localhost:5000/goods/";
-const url = "/api/goods/";
-
+// const url = "/api/goods/";
+HttpParams["test"] = function(){};
 @Injectable()
 export class GoodsService {
-
   constructor(private httpClient: HttpClient) { }
 
-  // get(): Observable<Goods[]> {
-  //   let result = this.httpClient.get<Goods[]>(url);
+  find(id: string): Observable<Goods>{ return this.httpClient.get<Goods>(url + id); }
 
-  //   return result;
-  // }
-  get(): Observable<HttpResponse<Goods[]>> {
-    let result = this.httpClient
-    .get<any>(mockUrl, { observe: 'response' })
-    .pipe(
-      map(data => data.body)
-    )
-    ;
+  search(keyword: string = "", pageIndex: number, pageSize: number): Observable<ApiModel<Goods>>{
+    let params = new HttpParams().set("keyword", keyword).set("pageIndex", pageIndex.toString()).set("pageSize", pageSize.toString());
     
-    return result;
+    return this.httpClient.get<ApiModel<Goods>>(url, { params } );
   }
 
-  find(id: string): Observable<Goods>{
-    let result = this.httpClient.get<Goods>(url + id);
-
-    return result;
-  }
-
-  search(keyword: string): Observable<Goods[]>{
-    return this.httpClient.get<Goods[]>(url + "?keyword=" + keyword);
-  }
-
-  post(data: Goods): Observable<Goods>{
-    let result = this.httpClient.post<Goods>(url, data);
-    return result;
-  }
-
-  put(data: Goods): Observable<Goods>{
-    let result = this.httpClient.put<Goods>(url + data.id, data);
-
-    return result;
-  }
-
-  getCandidates(keyword: string): Observable<Candidate[]> {
-    let result = this.httpClient.get<Goods[]>(url + "candidates/" + keyword );
-
-    return result;
-  }
+  post(data: Goods): Observable<Goods> { return this.httpClient.post<Goods>(url, data); }
+  put(data: Goods): Observable<Goods> { return this.httpClient.put<Goods>(url + data.id, data); }
+  getCandidates(keyword: string): Observable<Candidate[]> { return this.httpClient.get<Goods[]>(`${url}candidates/${keyword}` ); }
 }

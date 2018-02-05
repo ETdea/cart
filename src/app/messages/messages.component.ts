@@ -8,4 +8,6 @@ import { MessageService } from '../service/messages.service';
 })
 export class MessagesComponent {
   constructor(private messageService: MessageService) { }
+
+  
 }

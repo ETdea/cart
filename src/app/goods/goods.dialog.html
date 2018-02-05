@@ -2,7 +2,7 @@
 
 <div nat-dailog-content>
   <form [formGroup]="form" novalidate>
-    <mat-form-field>
+    <mat-form-field *ngIf="!isCreatedMode">
       <input matInput placeholder="標題" formControlName="title">
     </mat-form-field>
 

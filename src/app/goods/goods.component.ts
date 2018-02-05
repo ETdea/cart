@@ -1,12 +1,15 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatTableDataSource, MatPaginator, MatDialog, MatDialogRef } from '@angular/material';
+import { MatTableDataSource, MatPaginator, MatDialog, MatDialogRef, PageEvent } from '@angular/material';
 import { GoodsDialog } from './goods';
 import { GoodsService } from '../service/goods.service';
 import { Goods } from '../service/model/goods';
 import { retry } from 'rxjs/operator/retry';
 import { resetFakeAsyncZone } from '@angular/core/testing';
 import { concat } from 'rxjs/observable/concat';
+import { ApiModel } from '../service/model/apiModel';
+import { count } from 'rxjs/operator/count';
+import { getLocaleDateFormat } from '@angular/common/src/i18n/locale_data_api';
 
 @Component({
   selector: 'app-goods',
@@ -18,15 +21,19 @@ export class GoodsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   
   readonly displayedColumns = ['title', 'nhidrug'];
-  isTableLoading = false;
+  readonly pageSizeOptions = [5, 10, 25, 100];
+  readonly defaultPageSize = this.pageSizeOptions[2];
 
   dialog: MatDialogRef<GoodsDialog>;
   searchedInputValue: string;
-  isSpinnerVisible = false;
 
   dataSource = new MatTableDataSource<Goods>();
+  isSpinnerVisible = false;
+  totalCount = 0;
 
   ngOnInit() {
+    this.paginator.page.subscribe(() => this.searchedButtonClick(this.paginator.pageIndex));
+    this.paginator.pageSize = this.defaultPageSize;
     this.tableInit();
   }
 
@@ -34,26 +41,17 @@ export class GoodsComponent implements OnInit {
   showSpinner(): this { this.isSpinnerVisible = true; return this; }
   hideSpinner(): this { this.isSpinnerVisible = false; return this; }
   updateTable(data: Goods[]): this { this.dataSource.data = data; return this; }
+  setTotalCount(value: number):this { this.totalCount = value; return this;}
 
   tableInit() {
-    this.dataSource.paginator = this.paginator;
-    this.showSpinner();
-    // this.goodsService.get().subscribe(result => { this.updateTable(result).hideSpinner() });
-    this.goodsService.get().subscribe(result => { 
-      // this.updateTable(result).hideSpinner()
-      console.log(result);
-    });
-
+    this.searchedButtonClick();
     return this;
   }
 
-  searchedButtonClick(): void {
+  searchedButtonClick(pageIndex: number = 0): void {
     this.showSpinner();
-
-    this.goodsService.search(this.searchedInputValue).subscribe(result => {
-      this.dataSource.data = result;
-      this.hideSpinner();
-    });
+    this.goodsService.search(this.searchedInputValue, this.paginator.pageIndex, this.paginator.pageSize)
+    .subscribe(result => this.updateTable(result.items).setTotalCount(result.totalCount).hideSpinner());
   }
 
   addedButtonClick(): void {

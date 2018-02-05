@@ -6,3 +6,10 @@
     right: 0;
     z-index: 4000;
   }
+
+  .mat-paginator-page-size {
+    /* display: none !important; */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }

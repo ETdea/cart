@@ -9,8 +9,8 @@
     </button>
 
     <input matInput [(ngModel)]="searchedInputValue" (keyup.enter)="searchedButtonClick()" placeholder="搜尋" style="width:60%">
-
-    <mat-paginator #paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+    
+    <mat-paginator #paginator [length]="totalCount" [pageSize]="defaultPageSize" [pageSizeOptions]="pageSizeOptions" ></mat-paginator>
   </mat-toolbar-row>
 </mat-toolbar>
 
@@ -36,74 +36,3 @@
   <mat-header-row *matHeaderRowDef></mat-header-row>
   <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="tableRowClick(row.id)"></mat-row>
 </mat-table>
-
-<div>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-  <p>testestest</p>
-</div>
