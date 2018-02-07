@@ -19,6 +19,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { LayoutComponent } from './layout/layout.component';
 import { AppConfig } from './app.config';
+import { AuthenticationService } from './service/authentication.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { AppConfig } from './app.config';
   entryComponents:[
     GoodsDialog
   ],
-  providers: [AppConfig, AuthGuard , FormBuilder,  GoodsService, OrderService, LayoutService, MessageService],
+  providers: [AuthenticationService, AppConfig, AuthGuard , FormBuilder,  GoodsService, OrderService, LayoutService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
