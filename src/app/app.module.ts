@@ -15,6 +15,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MessagesComponent } from './messages/messages.component';
 import { OrderComponent } from './order/order.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './_guards/auth.guard';
+import { LayoutComponent } from './layout/layout.component';
+import { AppConfig } from './app.config';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,9 @@ import { OrderComponent } from './order/order.component';
     GoodsDialog,
     CartComponent,
     MessagesComponent,
-    OrderComponent
+    OrderComponent,
+    LoginComponent,
+    LayoutComponent
   ],
   imports: [
     AppRoutingModule,
@@ -37,7 +43,7 @@ import { OrderComponent } from './order/order.component';
   entryComponents:[
     GoodsDialog
   ],
-  providers: [FormBuilder,  GoodsService, OrderService, LayoutService, MessageService],
+  providers: [AppConfig, AuthGuard , FormBuilder,  GoodsService, OrderService, LayoutService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
