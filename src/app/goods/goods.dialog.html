@@ -1,0 +1,76 @@
+<h1 mat-dialog-title>{{ isCreatedMode ? "建立上架商品" : "編輯上架商品"}}</h1>
+
+<div nat-dailog-content>
+  <form [formGroup]="form" novalidate>
+    <mat-form-field *ngIf="!isCreatedMode">
+      <input matInput placeholder="標題" formControlName="title">
+    </mat-form-field>
+
+    <!-- <mat-form-field>
+      <input matInput placeholder="說明" formControlName="desciption">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" (click)="picker.open()" readonly placeholder="上架日期" formControlName="startDate">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="下架日期" formControlName="endDate">
+    </mat-form-field> -->
+
+    <div formGroupName="product">
+      <mat-form-field>
+        <input matInput placeholder="中文名稱" formControlName="chineseName">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="英文名稱" formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="藥廠" formControlName="producer">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="劑量" formControlName="dosage">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="健保碼" formControlName="nhiDrugCode">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="健保價" formControlName="nhiPrice">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="包裝" formControlName="package">
+      </mat-form-field>
+    </div>
+
+    <div formArrayName="units">
+      <div *ngFor="let unit of formArray.controls; index as i" [formGroupName]="i">
+        <mat-form-field>
+          <input matInput placeholder="顯示名稱" formControlName="title">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="減去庫存數量" formControlName="subtractStockQty">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="價格" formControlName="price">
+        </mat-form-field>
+
+        <button mat-raised-button *ngIf="formArray.length != 1" (click)="deletedButtonClick(i)">刪除</button>
+        <button mat-raised-button *ngIf="formArray.length == i+1" (click)="addedButtonClick()" color="accent">加一筆</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="cancelButtonClick()">取消</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="outputData" [disabled]="form.invalid">儲存</button>
+</div>

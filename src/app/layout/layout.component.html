@@ -1,0 +1,51 @@
+<div style="overflow:visible">
+  <mat-toolbar color="primary">
+    <button mat-button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div style="padding-left: 2vw;min-width: 12vw;">
+      <h1>益全生技藥品</h1>
+    </div>
+    <div>
+      <button mat-icon-button disableRipple="true">
+        <mat-icon>search</mat-icon>
+      </button>
+
+      <input matInput placeholder="搜尋" style="width: 47vw;">
+    </div>
+
+    <span style="flex: auto;"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>person</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu" yPosition="below" xPosition="after">
+      <button mat-menu-item (click)="buttonClick()">
+        登出
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav #drawer mode="side" opened="true">
+      <mat-nav-list>
+        <mat-list-item (click)="onClick('goods')">
+          <a>上架商品</a>
+        </mat-list-item>
+        <mat-list-item (click)="onClick('cart')">
+          <a>購物車</a>
+        </mat-list-item>
+        <mat-list-item (click)="onClick('order')">
+          <a>訂單</a>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
