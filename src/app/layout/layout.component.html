@@ -31,14 +31,17 @@
   <mat-sidenav-container>
     <mat-sidenav #drawer mode="side" opened="true">
       <mat-nav-list>
-        <mat-list-item (click)="onClick('goods')">
+        <mat-list-item (click)="onClick('goods')" *ngIf="user.isAdmin">
           <a>上架商品</a>
         </mat-list-item>
-        <mat-list-item (click)="onClick('cart')">
+        <mat-list-item (click)="onClick('cart')" *ngIf="!user.isAdmin">
           <a>購物車</a>
         </mat-list-item>
         <mat-list-item (click)="onClick('order')">
           <a>訂單</a>
+        </mat-list-item>
+        <mat-list-item (click)="onClick('user')">
+          <a>會員</a>
         </mat-list-item>
       </mat-nav-list>
     </mat-sidenav>

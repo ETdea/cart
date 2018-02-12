@@ -24,7 +24,6 @@ export class LoginComponent implements OnInit {
     isLoading = false;
 
 
-    model: any = {};
     loading = false;
     returnUrl: string;
 
@@ -41,7 +40,7 @@ export class LoginComponent implements OnInit {
 
     buttonClick() {
         this.isLoading = true;
-        this.authenticationService.login(this.model.username, this.model.password)
+        this.authenticationService.login(this.form.value)
             .subscribe(
             data => {
                 this.router.navigate([this.returnUrl]);

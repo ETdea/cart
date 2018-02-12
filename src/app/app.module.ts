@@ -9,6 +9,7 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GoodsService } from './service/goods.service';
 import { OrderService } from './service/order.service';
+import { UserService } from './service/user.service';
 import { MessageService } from './service/messages.service';
 import { LayoutService } from './service/layout.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +21,8 @@ import { AuthGuard } from './_guards/auth.guard';
 import { LayoutComponent } from './layout/layout.component';
 import { AppConfig } from './app.config';
 import { AuthenticationService } from './service/authentication.service';
+import { UserComponent } from './user/user.component';
+import { UserDialog } from './user/user.dialog';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { AuthenticationService } from './service/authentication.service';
     MessagesComponent,
     OrderComponent,
     LoginComponent,
-    LayoutComponent
+    LayoutComponent,
+    UserComponent,
+    UserDialog
   ],
   imports: [
     AppRoutingModule,
@@ -42,9 +47,10 @@ import { AuthenticationService } from './service/authentication.service';
     LayoutModule
   ],
   entryComponents:[
-    GoodsDialog
+    GoodsDialog,
+    UserDialog
   ],
-  providers: [AuthenticationService, AppConfig, AuthGuard , FormBuilder,  GoodsService, OrderService, LayoutService, MessageService],
+  providers: [AuthenticationService, UserService, AppConfig, AuthGuard , FormBuilder,  GoodsService, OrderService, LayoutService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -13,6 +13,9 @@ export class LayoutComponent implements OnInit {
     private router: Router,
     private authenticationService: AuthenticationService) { }
 
+  user = this.authenticationService.getUser();
+
+
   ngOnInit() {
   }
 

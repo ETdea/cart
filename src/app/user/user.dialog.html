@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>{{ isCreatedMode ? "新增用戶" : "編輯用戶資料"}}</h1>
+
+<div nat-dailog-content>
+  <form [formGroup]="form" novalidate>
+    <mat-form-field>
+      <input matInput placeholder="名稱" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="密碼" formControlName="password">
+    </mat-form-field>
+    <mat-slide-toggle>Slide me!</mat-slide-toggle>
+    <mat-slide-toggle  formControlName="title">
+        停用
+      </mat-slide-toggle>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="cancelButtonClick()">取消</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="outputData" [disabled]="form.invalid">儲存</button>
+</div>
