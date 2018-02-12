@@ -16,7 +16,7 @@
 
 <mat-spinner *ngIf="isSpinnerVisible"></mat-spinner>
 
-<mat-table #table [dataSource]="dataSource" matSort *ngIf="!isTableLoading">
+<mat-table #table [dataSource]="dataSource" matSort>
   <ng-container matColumnDef="title">
     <mat-header-cell *matHeaderCellDef mat-sort-header>title</mat-header-cell>
     <mat-cell *matCellDef="let goods">
