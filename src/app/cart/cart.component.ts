@@ -89,8 +89,7 @@ export class CartComponent implements OnInit {
   }
 
   setAutocompleteOptions(): this {
-    this.autocompleteOptions = this.goodsService.getCandidates(this.searchedInputValue);
-
+    this.autocompleteOptions = this.searchedInputValue == "" ? null : this.goodsService.getCandidates(this.searchedInputValue);
     return this;
   }
 
@@ -128,7 +127,7 @@ export class CartComponent implements OnInit {
   }
 
   searchedInputKeyup(): void {
-    if (this.isKeyInChar() && this.searchedInputValue != "") this.setAutocompleteOptions().setSearchedInputOldValue();
+    if (this.isKeyInChar()) this.setAutocompleteOptions().setSearchedInputOldValue();
   }
 
   quantityInputValueChange(goodsIndex: number): void {

@@ -11,7 +11,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material';
 import { MatProgressSpinnerModule } from '@angular/material';
-import { MatDialogModule, MatProgressBarModule } from '@angular/material';
+import { MatDialogModule, MatProgressBarModule, MatMenuModule} from '@angular/material';
 import { MatDatepickerModule, MatNativeDateModule, MatSnackBarModule } from '@angular/material';
 import { MatCardModule, MatGridListModule, MatAutocompleteModule, MatRippleModule } from '@angular/material';
 
@@ -37,7 +37,7 @@ import { MatCardModule, MatGridListModule, MatAutocompleteModule, MatRippleModul
     MatAutocompleteModule,
     MatRippleModule,
     MatProgressBarModule,
-    MatSnackBarModule
+    MatSnackBarModule,MatMenuModule
   ]
 })
 export class MaterialModule { }

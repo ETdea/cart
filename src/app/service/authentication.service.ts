@@ -1,14 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpResponse, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpResponse, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map'
 
 import { AppConfig } from '../app.config';
-import { Login } from './model';
+import { Login } from './model/login';
+import { User } from './model/user';
+
+const StorageKey = "currentUser";
 
 @Injectable()
 export class AuthenticationService {
     constructor(private httpClient: HttpClient, private config: AppConfig) { }
+    
+    private getUser = (): User => JSON.parse(localStorage.getItem(StorageKey));
+    getUserName = (): string => this.getUser.name;
+    getHeader = (): HttpHeaders => new HttpHeaders({ 'Authorization': 'Bearer ' + this.getUser().token });
+    logout = (): void => localStorage.removeItem(StorageKey);
 
     login(userName: string, password: string) {
 
@@ -21,15 +29,13 @@ export class AuthenticationService {
         //             localStorage.setItem('currentUser', JSON.stringify(user));
         //         }
         //     });
-        return this.httpClient.get("/assets/mocks/goods.json").map( () =>
-            {
-                localStorage.setItem('currentUser', "testset");
-            }
-        );
-    }
+        return this.httpClient.get("/assets/mocks/goods.json").map(() => {
+            let user = new User();
+            user.name = "testUser";
+            user.token = "I am token";
 
-    logout() {
-        // remove user from local storage to log user out
-        localStorage.removeItem('currentUser');
+            localStorage.setItem(StorageKey, JSON.stringify(user));
+        }
+        );
     }
 }

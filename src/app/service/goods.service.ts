@@ -7,7 +7,7 @@ import { retry } from 'rxjs/operators/retry';
 import { keyframes } from '@angular/animations/src/animation_metadata';
 import { catchError, map } from 'rxjs/operators';
 import { ApiModel } from './model/apiModel'
-import { RequestOptions, Headers } from '@angular/http';
+import { AuthenticationService } from './authentication.service';
 
 // const mockUrl = "/assets/mocks/goods.json";
 const url = "https://tpeyichangapi.azurewebsites.net/api/goods/";
@@ -16,26 +16,24 @@ const url = "https://tpeyichangapi.azurewebsites.net/api/goods/";
 
 @Injectable()
 export class GoodsService {
-  constructor(private httpClient: HttpClient) { }
+  constructor(public httpClient: HttpClient,
+    public authenticationService: AuthenticationService) { }
 
-  find(id: string): Observable<Goods>{ return this.httpClient.get<Goods>(url + id); }
+  find = (id: string): Observable<Goods> => this.httpClient.get<Goods>(url + id, this.getOptions()); 
+  post = (data: Goods): Observable<Goods> => this.httpClient.post<Goods>(url, data, this.getOptions());
+  put = (data: Goods): Observable<Goods> => this.httpClient.put<Goods>(url + data.id, data, this.getOptions());
+  getCandidates = (keyword: string): Observable<Candidate[]> =>
+    this.httpClient.get<Goods[]>(`${url}candidates/${keyword}`, this.getOptions());
+  search = (keyword: string = "", pageIndex: number, pageSize: number): Observable<ApiModel<Goods>> => 
+    this.httpClient.get<ApiModel<Goods>>(url, this.getSearchOptions(keyword, pageIndex, pageSize));
 
-  search(keyword: string = "", pageIndex: number, pageSize: number): Observable<ApiModel<Goods>>{
-    let params = new HttpParams().set("keyword", keyword).set("pageIndex", pageIndex.toString()).set("pageSize", pageSize.toString());
-    
-    return this.httpClient.get<ApiModel<Goods>>(url, { params } );
+  private getAuthHeader = () => this.authenticationService.getHeader();
+  private getOptions() { return { headers: this.getAuthHeader()}; }
+  private getSearchOptions(keyword: string = "", pageIndex: number, pageSize: number)
+  {
+    return {
+      params: new HttpParams().set("keyword", keyword).set("pageIndex", pageIndex.toString()).set("pageSize", pageSize.toString()),
+      headers: this.getAuthHeader()
+    };
   }
-
-  post(data: Goods): Observable<Goods> { return this.httpClient.post<Goods>(url, data); }
-  put(data: Goods): Observable<Goods> { return this.httpClient.put<Goods>(url + data.id, data); }
-  getCandidates(keyword: string): Observable<Candidate[]> { return this.httpClient.get<Goods[]>(`${url}candidates/${keyword}` ); }
-
-  private jwt() {
-    // create authorization header with jwt token
-    let currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    if (currentUser && currentUser.token) {
-        let headers = new Headers({ 'Authorization': 'Bearer ' + currentUser.token });
-        return new RequestOptions({ headers: headers });
-    }
-}
 }

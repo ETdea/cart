@@ -1,8 +1,0 @@
-.mat-sidenav {
-    min-width: 18vw;
-  }
-
-.mat-sidenav-content{
-    overflow: scroll;
-    height: 95vh;
-}

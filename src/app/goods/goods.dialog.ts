@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { Goods } from './goods';
+import { Goods } from '../service/model/goods';
 
 @Component({
   templateUrl: './goods.dialog.html',

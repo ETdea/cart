@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatTableDataSource, MatPaginator, MatDialog, MatDialogRef, PageEvent } from '@angular/material';
-import { GoodsDialog } from './goods';
+import { GoodsDialog } from './goods.dialog';
 import { GoodsService } from '../service/goods.service';
 import { Goods } from '../service/model/goods';
 import { retry } from 'rxjs/operator/retry';
