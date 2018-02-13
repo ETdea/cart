@@ -15,7 +15,7 @@ const routes: Routes = [
     component: LayoutComponent,
     canActivate: [AuthGuard],
     children: [
-      { path: '', redirectTo: 'goods', pathMatch: 'full' },
+      { path: '', redirectTo: 'order', pathMatch: 'full' },
       { path: 'goods', component: GoodsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'order', component: OrderComponent },

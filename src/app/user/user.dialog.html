@@ -3,16 +3,14 @@
 <div nat-dailog-content>
   <form [formGroup]="form" novalidate>
     <mat-form-field>
-      <input matInput placeholder="名稱" formControlName="name">
+      <input matInput placeholder="名稱" formControlName="userName">
     </mat-form-field>
 
     <mat-form-field>
       <input matInput placeholder="密碼" formControlName="password">
     </mat-form-field>
-    <mat-slide-toggle>Slide me!</mat-slide-toggle>
-    <mat-slide-toggle  formControlName="title">
-        停用
-      </mat-slide-toggle>
+
+    <mat-slide-toggle  formControlName="isDisabled">停用</mat-slide-toggle>
   </form>
 </div>
 

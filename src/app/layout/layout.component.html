@@ -40,7 +40,7 @@
         <mat-list-item (click)="onClick('order')">
           <a>訂單</a>
         </mat-list-item>
-        <mat-list-item (click)="onClick('user')">
+        <mat-list-item (click)="onClick('user')" *ngIf="user.isAdmin">
           <a>會員</a>
         </mat-list-item>
       </mat-nav-list>
