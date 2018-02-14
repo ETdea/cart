@@ -7,8 +7,8 @@ import { AppConfig } from '../app.config';
 import { Login, UserInfo, ChangePassword } from './model/login';
 
 const StorageKey = "currentUser";
-// const url = "https://tpeyichangapi.azurewebsites.net/api/account/login";
-const url = "/api/account/";
+const url = "https://tpeyichangapi.azurewebsites.net/api/account/login";
+// const url = "/api/account/";
 
 @Injectable()
 export class AuthenticationService {
