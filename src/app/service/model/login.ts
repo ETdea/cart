@@ -10,3 +10,9 @@ export class UserInfo
     isAdmin: boolean;
     token: string;
 }
+
+export class ChangePassword
+{
+    currentPassword: string;
+    newPassword: string;
+}

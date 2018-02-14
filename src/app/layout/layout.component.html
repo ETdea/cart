@@ -22,9 +22,12 @@
     </button>
 
     <mat-menu #menu="matMenu" yPosition="below" xPosition="after">
-      <button mat-menu-item (click)="buttonClick()">
-        登出
-      </button>
+        <button mat-menu-item (click)="changePasswordButtonClick()">
+          變更密碼
+        </button>
+        <button mat-menu-item (click)="logoutButtonClick()">
+          登出
+        </button>
     </mat-menu>
   </mat-toolbar>
 

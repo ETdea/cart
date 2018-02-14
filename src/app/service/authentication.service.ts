@@ -4,22 +4,24 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map'
 
 import { AppConfig } from '../app.config';
-import { Login, UserInfo } from './model/login';
+import { Login, UserInfo, ChangePassword } from './model/login';
 
 const StorageKey = "currentUser";
-const url = "https://tpeyichangapi.azurewebsites.net/api/account/login";
-// const url = "/api/account/login/";
+// const url = "https://tpeyichangapi.azurewebsites.net/api/account/login";
+const url = "/api/account/";
 
 @Injectable()
 export class AuthenticationService {
     constructor(private httpClient: HttpClient, private config: AppConfig) { }
 
-    getUser = (): UserInfo => JSON.parse(localStorage.getItem(StorageKey));
-    // getUserName = (): string => this.getUser().name;
-    // getIsAdmin = (): boolean => this.getUser().isAdmin;
-    getHeader = (): HttpHeaders => new HttpHeaders({ 'Authorization': 'Bearer ' + this.getUser().token });
+    get user(): UserInfo { return JSON.parse(localStorage.getItem(StorageKey)); }
+    getHeader = (): HttpHeaders => new HttpHeaders({ 'Authorization': 'Bearer ' + this.user.token });
     logout = (): void => localStorage.removeItem(StorageKey);
 
-    login = (data: Login) => this.httpClient.post<UserInfo>(url, data)
+    login = (data: Login) => this.httpClient.post<UserInfo>(url + "login", data)
         .map(result => { localStorage.setItem(StorageKey, JSON.stringify(result)); });
+
+    changePassword = (data: ChangePassword) => this.httpClient.post(url + "ChangePassword", data, this.options);
+    
+    private get options() { return { headers: this.getHeader()}; }
 }

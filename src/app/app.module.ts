@@ -23,6 +23,7 @@ import { AppConfig } from './app.config';
 import { AuthenticationService } from './service/authentication.service';
 import { UserComponent } from './user/user.component';
 import { UserDialog } from './user/user.dialog';
+import { ChangePasswordDialog } from './layout/change-password/change-password.dailog';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { UserDialog } from './user/user.dialog';
     LoginComponent,
     LayoutComponent,
     UserComponent,
-    UserDialog
+    UserDialog,
+    ChangePasswordDialog
   ],
   imports: [
     AppRoutingModule,
@@ -48,7 +50,7 @@ import { UserDialog } from './user/user.dialog';
   ],
   entryComponents:[
     GoodsDialog,
-    UserDialog
+    UserDialog,ChangePasswordDialog
   ],
   providers: [AuthenticationService, UserService, AppConfig, AuthGuard , FormBuilder,  GoodsService, OrderService, LayoutService, MessageService],
   bootstrap: [AppComponent]
