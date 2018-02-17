@@ -136,6 +136,6 @@ export class CartComponent implements OnInit {
 
   submitButtonClick(): void {
     this.orderService.post(this.form.value).subscribe(result => {});
-    this.router.navigateByUrl("goods");
+    this.router.navigateByUrl("order");
   }
 }
