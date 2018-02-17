@@ -9,8 +9,8 @@ import { catchError, map } from 'rxjs/operators';
 import { ApiModel } from './model/apiModel'
 import { AuthenticationService } from './authentication.service';
 
-// const url = "https://tpeyichangapi.azurewebsites.net/api/users/";
-const url = "/api/users/";
+const url = "https://tpeyichangapi.azurewebsites.net/api/users/";
+// const url = "/api/users/";
 
 @Injectable()
 export class UserService {
