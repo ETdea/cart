@@ -1,5 +1,6 @@
 export class Order {
   id: string;
+  customer: string;
   total: number;
   date: Date;
   details = [new Detail()];

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OrderService } from '../service/order.service';
 import { Order, Unit } from '../service/model/order';
+import { AuthenticationService } from '../service/authentication.service';
 
 @Component({
   selector: 'app-order',
@@ -8,10 +9,11 @@ import { Order, Unit } from '../service/model/order';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
+  constructor(private orderService: OrderService, private authenticationService: AuthenticationService) { }
 
+  user = this.authenticationService.user;
   data: Order[];
   tempDate = new Date();
-  constructor(private orderService: OrderService) { }
 
   ngOnInit() {
     this.cardInit();
